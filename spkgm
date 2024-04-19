@@ -1,9 +1,9 @@
+#!/bin/sh
 # A very simple package manager
 #   .list contains everything in the repository
 #   package.tar contains the package files and folder structure
 #   package.tar.list contains any dependencies
-#   /etc/dspkg/sources.list contains list of places to pull from
-
+#   /etc/spkgm/sources.list contains list of places to pull from
 name=spkgm
 usage="usage: $name [update/install/search] [package]"
 
