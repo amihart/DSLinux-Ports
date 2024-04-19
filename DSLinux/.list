@@ -7,3 +7,4 @@ sha256sum
 units
 xxd
 awk
+wc
