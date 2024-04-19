@@ -1,17 +1,23 @@
 #!/bin/sh
 # A very simple package manager
-#   .list contains everything in the repository
-#   package.tar contains the package files and folder structure
-#   package.tar.list contains any dependencies
-#   /etc/spkgm/sources.list contains list of places to pull from
 name=spkgm
-usage="usage: $name [update/install/search] [package]"
-
-#setup
-if [ "$1" = "setup" ]
+usage="usage: $name [update/install/search/remove/init] [package]"
+priv=`id -u`
+if [ ! "$priv" = "0" ]
 then
-	
-	nano /etc/$name/sources.list
+    echo "Needs elevated privileges."
+    exit
+fi
+
+if [ "$1" = "init" ]
+then
+    mkdir -p /etc/$name/cache/
+fi
+
+if [ ! -d "/etc/$name" ]
+then
+    echo "Run: $name init"
+    exit
 fi
 
 #install using package cache
@@ -76,8 +82,7 @@ then
                     wget -nv $source/$i.tar -O $t/$i.tar
                     if [ "$?" != 0 ]
                     then
-                        rm $t/*
-			rmdir $t
+                        rm -r $t
                         echo "Could not download dependencies."
                         exit
                     fi
@@ -85,7 +90,7 @@ then
                     wget -nv $source/$i.list -O $t/$i.list
                     if [ "$?" = 0 ]
                     then
-                        c2=`echo $c2 + 1 | bc`
+                        c2=`expr $c2 + 1`
                         cp $t/$i.list $c/$i.list
                         cp $t/$i.list $t/$c2.list
                     else
@@ -93,7 +98,7 @@ then
                     fi
                 fi
             done
-            c1=`echo $c1 + 1 | bc`
+            c1=`expr $c1 + 1`
         done
     fi
     for i in `ls $t/*.tar`
@@ -105,14 +110,12 @@ then
     echo "Cleaning up."
     ls $c
     cp -r $c/* /etc/$name/cache/
-    rm $t/*
-    rmdir $t
-    rm $c/*
-    rmdir $c
+    rm -r $t
+    rm -r $c
     echo "Done."
 fi
 
-#install using package search
+#search packages
 if [ "$1" = "search" ]
 then
     if [ ! -f "/etc/$name/cache/.list" ]
@@ -123,63 +126,36 @@ then
     cat /etc/$name/cache/.list | grep "$2"
 fi
 
-###install using package cache
-##if [ "$1" = "remove" ]
-##then
-##    if [ ! -f "/etc/$name/cache/$2.list" ]
-##    then
-##        echo "Package is not installed."
-##        exit
-##    fi
-##
-##    t=`mktemp -d`
-##    cp /etc/$name/cache/$2.list $t/0.list
-##    cp /etc/$name/cache/$2.tar $t/0.tar
-##    c1=0
-##    c2=0
-##    while [ -f "$t/$c1.list" ]
-##    do
-##        for i in `cat $t/$c1.list`
-##        do
-##            if [ "$i" != "" ]
-##            then
-##                cp /etc/$name/cache/$i.
-##                wget -nv $source/$i.tar -O $t/$i.tar
-##                if [ "$?" != 0 ]
-##                then
-##                    rm -r $t
-##                    echo "Could not download dependencies."
-##                    exit
-##                fi
-##                tar -tf $t/$i.tar > $c/$i.tar
-##                wget -nv $source/$i.list -O $t/$i.list
-##                if [ "$?" = 0 ]
-##                then
-##                    c2=`echo $c2 + 1 | bc`
-##                    cp $t/$i.list $c/$i.list
-##                    cp $t/$i.list $t/$c2.list
-##                else
-##                    rm -f $t/$i.list
-##                fi
-##            fi
-##        done
-##        c1=`echo $c1 + 1 | bc`
-##    done
-##
-##    for i in `ls $t/*.tar`
-##    do
-##        file=`echo $i | sed 's/.*[/]//'`
-##        echo "Installing $file."
-##        tar -xvf $i -C /
-##    done
-##    echo "Cleaning up."
-##    ls $c
-##    cp -r $c/* /etc/$name/cache/
-##    rm -r $t
-##    rm -r $c
-##    echo "Done."
-##fi
+#show installed packages
+if [ "$1" = "list" ]
+then
+    for i in `ls /etc/$name/cache/*.tar`
+    do
+        echo $i | sed 's/\.tar//'    
+    done
+fi
 
+#uninstall using package cache
+if [ "$1" = "remove" ]
+then
+    if [ ! -f "/etc/$name/cache/$2.tar" ]
+    then
+        echo "Package is not installed."
+        exit
+    fi
+    for i in `cat /etc/$name/cache/$2.tar`
+    do
+        rm $i
+        dirna=`dirname $i`
+        files=`ls $dirna`
+        if [ "$files" = "" ]
+        then
+            rmdir $dirna
+        fi
+    done
+    rm /etc/$name/cache/$2.tar
+    rm /etc/$name/cache/$2.list
+fi
 
 #update package cache
 if [ "$1" = "update" ]
