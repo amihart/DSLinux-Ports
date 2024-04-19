@@ -1,0 +1,223 @@
+# A very simple package manager
+#   .list contains everything in the repository
+#   package.tar contains the package files and folder structure
+#   package.tar.list contains any dependencies
+#   /etc/dspkg/sources.list contains list of places to pull from
+
+name=spkgm
+usage="usage: $name [update/install/search] [package]"
+
+#setup
+if [ "$1" = "setup" ]
+then
+	
+	nano /etc/$name/sources.list
+fi
+
+#install using package cache
+if [ "$1" = "install" ]
+then
+    if [ ! -f "/etc/$name/cache/.list" ]
+    then
+        echo "Please run an update."
+        exit
+    fi
+    source=""
+    file=""
+    files=`cat /etc/$name/cache/.list | sed 's/ /#/'`
+    for i in $files
+    do
+        a=`echo $i | sed 's/#.*//'`
+        b=`echo $i | sed 's/.*#//'`
+        if [ "$b" = "$2" ]
+        then
+            if [ "$3" = "" ]
+            then
+                source="$a"
+                file="$b"
+            else
+                if [ "$a" = "$3" ]
+                then
+                    source="$a"
+                    file="$b"
+                fi
+            fi
+        fi
+    done
+    if [ "$source" = "" ]
+    then
+        echo "Package not found."
+        exit
+    fi
+    t=`mktemp -d`
+    c=`mktemp -d`
+    wget -nv $source/$file.tar -O $t/$file.tar
+    if [ "$?" != 0 ]
+    then
+        rm -r $t
+        echo "Could not download package."
+        exit
+    fi
+    tar -tf $t/$file.tar > $c/$file.tar
+    wget -nv $source/$file.list -O $t/0.list
+    if [ "$?" != 0 ]
+    then
+        tar -xvf $t/$file.tar -C /
+    else
+        cp $t/0.list $c/$file.list
+        c1=0
+        c2=0
+        while [ -f "$t/$c1.list" ]
+        do
+            for i in `cat $t/$c1.list`
+            do
+                if [ "$i" != "" ]
+                then
+                    wget -nv $source/$i.tar -O $t/$i.tar
+                    if [ "$?" != 0 ]
+                    then
+                        rm $t/*
+			rmdir $t
+                        echo "Could not download dependencies."
+                        exit
+                    fi
+                    tar -tf $t/$i.tar > $c/$i.tar
+                    wget -nv $source/$i.list -O $t/$i.list
+                    if [ "$?" = 0 ]
+                    then
+                        c2=`echo $c2 + 1 | bc`
+                        cp $t/$i.list $c/$i.list
+                        cp $t/$i.list $t/$c2.list
+                    else
+                        rm -f $t/$i.list
+                    fi
+                fi
+            done
+            c1=`echo $c1 + 1 | bc`
+        done
+    fi
+    for i in `ls $t/*.tar`
+    do
+        file=`echo $i | sed 's/.*[/]//'`
+        echo "Installing $file."
+        tar -xvf $i -C /
+    done
+    echo "Cleaning up."
+    ls $c
+    cp -r $c/* /etc/$name/cache/
+    rm $t/*
+    rmdir $t
+    rm $c/*
+    rmdir $c
+    echo "Done."
+fi
+
+#install using package search
+if [ "$1" = "search" ]
+then
+    if [ ! -f "/etc/$name/cache/.list" ]
+    then
+        echo "Please run an update."
+        exit
+    fi
+    cat /etc/$name/cache/.list | grep "$2"
+fi
+
+###install using package cache
+##if [ "$1" = "remove" ]
+##then
+##    if [ ! -f "/etc/$name/cache/$2.list" ]
+##    then
+##        echo "Package is not installed."
+##        exit
+##    fi
+##
+##    t=`mktemp -d`
+##    cp /etc/$name/cache/$2.list $t/0.list
+##    cp /etc/$name/cache/$2.tar $t/0.tar
+##    c1=0
+##    c2=0
+##    while [ -f "$t/$c1.list" ]
+##    do
+##        for i in `cat $t/$c1.list`
+##        do
+##            if [ "$i" != "" ]
+##            then
+##                cp /etc/$name/cache/$i.
+##                wget -nv $source/$i.tar -O $t/$i.tar
+##                if [ "$?" != 0 ]
+##                then
+##                    rm -r $t
+##                    echo "Could not download dependencies."
+##                    exit
+##                fi
+##                tar -tf $t/$i.tar > $c/$i.tar
+##                wget -nv $source/$i.list -O $t/$i.list
+##                if [ "$?" = 0 ]
+##                then
+##                    c2=`echo $c2 + 1 | bc`
+##                    cp $t/$i.list $c/$i.list
+##                    cp $t/$i.list $t/$c2.list
+##                else
+##                    rm -f $t/$i.list
+##                fi
+##            fi
+##        done
+##        c1=`echo $c1 + 1 | bc`
+##    done
+##
+##    for i in `ls $t/*.tar`
+##    do
+##        file=`echo $i | sed 's/.*[/]//'`
+##        echo "Installing $file."
+##        tar -xvf $i -C /
+##    done
+##    echo "Cleaning up."
+##    ls $c
+##    cp -r $c/* /etc/$name/cache/
+##    rm -r $t
+##    rm -r $c
+##    echo "Done."
+##fi
+
+
+#update package cache
+if [ "$1" = "update" ]
+then
+    sources=`cat /etc/$name/sources.list`
+    for i in $sources
+    do
+        if [ "$i" != "" ]
+        then
+            files=`wget -q -nv $i/.list -O -`
+            if [ "$?" != 0 ]
+            then
+                echo "Update failed."
+                exit
+            fi
+            if [ -f "/etc/$name/cache/.list" ]
+            then
+                rm /etc/$name/cache/.list
+                if [ "$?" != 0 ]
+                then
+                    echo "Update failed."
+                    exit
+                fi
+            fi
+            for j in $files
+            do
+                if [ "$j" != "" ]
+                then
+                    echo "$i $j" >> /etc/$name/cache/.list
+                    if [ "$?" != 0 ]
+                    then
+                        echo "Update failed."
+                        exit
+                    fi
+                fi
+            done
+        fi
+    done
+fi
+
+
