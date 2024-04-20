@@ -1,5 +1,9 @@
 #!/bin/sh
 # A very simple package manager
+#   .list contains everything in the repository
+#   package.tar contains the package files and folder structure
+#   package.tar.list contains any dependencies
+#   /etc/spkgm/sources.list contains list of places to pull from
 
 name=spkgm
 usage="usage: $name [update/install/search/remove/init] [package]"
@@ -58,7 +62,16 @@ then
     fi
     t=`mktemp -d`
     c=`mktemp -d`
-    wget -nv $source/$file.tar -O $t/$file.tar
+
+    fstc="`echo $source | sed 's/^\(.\).*/\1/'`"
+    fa="wget -nv"
+    fb="-O"
+    if [ "$fstc" = "/" ]
+    then
+        fa="cp"
+        fb=""
+    fi
+    $fa $source/$file.tar $fb $t/$file.tar
     if [ "$?" != 0 ]
     then
         rm -r $t
@@ -66,7 +79,7 @@ then
         exit
     fi
     tar -tf $t/$file.tar > $c/$file.tar
-    wget -nv $source/$file.list -O $t/0.list
+    $fa $source/$file.list $fb $t/0.list
     if [ "$?" != 0 ]
     then
         tar -xvf $t/$file.tar -C /
@@ -80,7 +93,7 @@ then
             do
                 if [ "$i" != "" ]
                 then
-                    wget -nv $source/$i.tar -O $t/$i.tar
+                    $fa $source/$i.tar $fb $t/$i.tar
                     if [ "$?" != 0 ]
                     then
                         rm -r $t
@@ -88,7 +101,7 @@ then
                         exit
                     fi
                     tar -tf $t/$i.tar > $c/$i.tar
-                    wget -nv $source/$i.list -O $t/$i.list
+                    $fa $source/$i.list $fb $t/$i.list
                     if [ "$?" = 0 ]
                     then
                         c2=`expr $c2 + 1`
@@ -166,7 +179,13 @@ then
     do
         if [ "$i" != "" ]
         then
-            files=`wget -q -nv $i/.list -O -`
+            fstc="`echo $source | sed 's/^\(.\).*/\1/'`"
+            if [ "$fstc" = "/" ]
+            then
+                files=`cat $i/.list`
+            else
+                files=`wget -q -nv $i/.list -O -`
+            fi
             if [ "$?" != 0 ]
             then
                 echo "Update failed."
