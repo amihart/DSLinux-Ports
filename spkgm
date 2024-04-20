@@ -1,5 +1,6 @@
 #!/bin/sh
 # A very simple package manager
+
 name=spkgm
 usage="usage: $name [update/install/search/remove/init] [package]"
 priv=`id -u`
