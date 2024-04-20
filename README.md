@@ -2,7 +2,21 @@ An expansion for DSLinux
 
 Run coreutils-init.sh to copy files from the coreutils folder into /usr/bin. This probably was not done by the developers automatically because some of these commands seem to be broken (such as printf), but many others seem to work fine (base64, sha commands, wc, yes, etc) and are very useful.
 
-The spkmg should be placed in /usr/bin as well and is a package manager. Run "spkmg init" to initialize it. You need to host the packages somewhere. The next section will discuss a way to host 
+##Package Manager
+
+The spkmg is a package manager which can be used to pull packages from a website hosting the www/ folder as an HTTP file server (such as with php -S).  You don't need the package manager to install any 
+```
+tar -cx
+```
+
+
+
+The spkmg is a package manager which can be used to pull packages from a website hosting the www folder as an HTTP file server (such as with php -S). You have to place spkgm in /usr/bin, run "spkgm init", then add the website URL to /etc/spkgm/sources.list. Then, you merely need to run "spkgm update" then "spkgm search somepackage" to look for a package, then "spkgm 
+
+
+
+
+should be placed in /usr/bin as well and is a package manager. Run "spkmg init" to initialize it. You need to host the packages somewhere. The next section will discuss a way to host 
 
 ## File Transf
 
