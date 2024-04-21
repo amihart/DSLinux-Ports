@@ -24,3 +24,6 @@ Another useful command ported here is `awk` found in the `awk.tar` package, whic
 
 The version of `wget` here in the `wget.tar` package is a later version but without SSL support (meaning HTTPS websites don't work). The `wget` in DSLinux by default has SSL support but it is outdated and so it fails to form an SSL connection on many websites. The SSL code for the later version of `wget` seems to build but crash when actually used, so it is built without SSL support. You can choose either to stick with the older version of `wget` with finnicky SSL support, or the newer one without it, depending on your preference.
 
+## NFS
+
+I added a kernel which supports mounting drives over NFSv2 or NFSv3.
