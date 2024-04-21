@@ -16,10 +16,10 @@ The `lua.tar` contains both the Lua5 interpreter and compiler compiled with POSI
 
 Probably the most useful thing in this repository is an updated version of `ssh` and `scp` which is found in the `dropbear.tar` package. This allows you to SSH into a modern device without having to downgrade your security in the `/etc/ssh/sshd_config` settings.
 
-## WGET
+## wget
 
-The version of `wget` here is a later version but without SSL support (meaning HTTPS websites don't work). The version of `wget` in DSLinux by default has SSL support but it is outdated and so it fails to form an SSL connection on many websites. The SSL code for the later version of `wget` seems to build but crash when actually used, so it is built without SSL support. You can choose either to stick with the older version of `wget` with finnicky SSL support, or the newer one without it, depending on your preference.
+The version of `wget` here in the `wget.tar` package is a later version but without SSL support (meaning HTTPS websites don't work). The version of `wget` in DSLinux by default has SSL support but it is outdated and so it fails to form an SSL connection on many websites. The SSL code for the later version of `wget` seems to build but crash when actually used, so it is built without SSL support. You can choose either to stick with the older version of `wget` with finnicky SSL support, or the newer one without it, depending on your preference.
 
 ## AWK
 
-Another useful command ported here is `awk`, which is itself an entire scripting language, but typically used for processing output of other commands in shel scripts. 
+Another useful command ported here is `awk` found in the `awk.tar` package, which is itself an entire scripting language, but typically used for processing output of other commands in shel scripts. 
