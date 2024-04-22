@@ -1,0 +1,66 @@
+make[2]: Entering directory `/home/home/dslinux-ports/user/lua-5.4.6/src/lib/readline'
+rm -f readline.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 readline.c
+rm -f vi_mode.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 vi_mode.c
+rm -f funmap.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 funmap.c
+rm -f keymaps.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 keymaps.c
+rm -f parens.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 parens.c
+rm -f search.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 search.c
+rm -f rltty.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 rltty.c
+rm -f complete.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 complete.c
+rm -f bind.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 bind.c
+rm -f isearch.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 isearch.c
+rm -f display.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 display.c
+rm -f signals.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 signals.c
+rm -f util.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 util.c
+rm -f kill.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 kill.c
+rm -f undo.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 undo.c
+rm -f macro.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 macro.c
+rm -f input.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 input.c
+rm -f callback.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 callback.c
+rm -f terminal.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 terminal.c
+rm -f nls.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 nls.c
+rm -f history.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 history.c
+rm -f histexpand.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 histexpand.c
+rm -f histfile.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 histfile.c
+rm -f histsearch.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 histsearch.c
+rm -f shell.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 shell.c
+rm -f savestring.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 savestring.c
+rm -f tilde.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 tilde.c
+rm -f xmalloc.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 xmalloc.c
+rm -f compat.o
+ucfront-gcc arm-linux-elf-gcc  -c -DHAVE_CONFIG_H -DSHELL  -D_LARGEFILE64_SOURCE -I. -I/home/home/dslinux-ports/user/tmp/bash -I../.. -I../../lib  -g -O2 compat.c
+rm -f libreadline.a
+arm-linux-elf-ar  cr libreadline.a readline.o vi_mode.o funmap.o keymaps.o parens.o search.o rltty.o complete.o bind.o isearch.o display.o signals.o util.o kill.o undo.o macro.o input.o callback.o terminal.o nls.o history.o histexpand.o histfile.o histsearch.o shell.o savestring.o tilde.o xmalloc.o compat.o
+test -n "arm-linux-elf-ar s " && arm-linux-elf-ar s  libreadline.a
+rm -f libhistory.a
+arm-linux-elf-ar  cr libhistory.a history.o histexpand.o histfile.o histsearch.o shell.o savestring.o xmalloc.o
+test -n "arm-linux-elf-ar s " && arm-linux-elf-ar s  libhistory.a
+make[2]: Leaving directory `/home/home/dslinux-ports/user/lua-5.4.6/src/lib/readline'

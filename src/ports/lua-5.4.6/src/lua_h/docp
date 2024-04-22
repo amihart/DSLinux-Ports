@@ -1,0 +1,6 @@
+if [ "$1" = "1" ]
+then
+	cat lua_h/lua.h > lua.h
+else
+	cat lua_h/lua.h | grep -v LUA_USE_READLINE > lua.h
+fi

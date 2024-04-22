@@ -1,0 +1,109 @@
+sig-handler.o sig-handler.o: sig-handler.c ../config.h sig-handler.h \
+  signal.h sys/types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h stddef.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/endian.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/endian.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/select.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/select.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigset.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/signal.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/signum.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/siginfo.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/wordsize.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigaction.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigcontext.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/asm/sigcontext.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigstack.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/ucontext.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/ucontext.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/procfs.h sys/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/user.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigthread.h
+
+../config.h:
+
+sig-handler.h:
+
+signal.h:
+
+sys/types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h:
+
+time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/endian.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/endian.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/select.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/select.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigset.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/signal.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/signum.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/siginfo.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/wordsize.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigaction.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigcontext.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/asm/sigcontext.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigstack.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/ucontext.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/ucontext.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/procfs.h:
+
+sys/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/user.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigthread.h:
