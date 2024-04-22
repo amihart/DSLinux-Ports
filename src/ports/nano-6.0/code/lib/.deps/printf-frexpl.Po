@@ -1,8 +1,0 @@
-printf-frexpl.o printf-frexpl.o: printf-frexpl.c ../config.h \
-  printf-frexpl.h printf-frexp.h
-
-../config.h:
-
-printf-frexpl.h:
-
-printf-frexp.h:

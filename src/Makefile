@@ -1,2 +1,0 @@
-all:
-	sh .make

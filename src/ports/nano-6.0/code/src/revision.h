@@ -1,1 +1,0 @@
-#define PLAINBUILD "from tarball"

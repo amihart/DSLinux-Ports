@@ -1,1 +1,0 @@
-Makefile:	CC+= -L$(ROOTDIR)/lib -lncurses
