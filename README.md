@@ -16,14 +16,18 @@ The `lua.tar` package contains both the Lua5 interpreter and compiler compiled w
 
 Probably the most useful thing in this repository is an updated version of `ssh` and `scp` which is found in the `dropbear.tar` package. This allows you to SSH into a modern device without having to downgrade your security in the `/etc/ssh/sshd_config` settings.
 
+## ftp
+
+An FTP client. DSLinux ships with `ftpd` but no `ftp`.
+
+## NFS
+
+The `kernel.tar` is a kernel built with support for mounting drives over the network with NFSv2 or NFSv3.
+
 ## awk
 
-Another useful command ported here is `awk` found in the `awk.tar` package, which is itself an entire scripting language, but typically used for processing output of other commands in shel scripts. 
+Another useful command ported here is `awk` found in the `awk.tar` package, which is itself an entire scripting language, but typically used for processing output of other commands in shel scripts. This is actually built from the `mawk` source code but just renamed to `awk`. It is also possible to install `awk` by enabling it in the `busybox` configuration when compiling.
 
 ## wget
 
 The version of `wget` here in the `wget.tar` package is a later version but without SSL support (meaning HTTPS websites don't work). The `wget` in DSLinux by default has SSL support but it is outdated and so it fails to form an SSL connection on many websites. The SSL code for the later version of `wget` seems to build but crash when actually used, so it is built without SSL support. You can choose either to stick with the older version of `wget` with finnicky SSL support, or the newer one without it, depending on your preference.
-
-## NFS
-
-I added a kernel which supports mounting drives over NFSv2 or NFSv3.
