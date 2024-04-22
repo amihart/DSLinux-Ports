@@ -1,0 +1,19 @@
+mbsrtowcs-state.o mbsrtowcs-state.o: mbsrtowcs-state.c ../config.h \
+  wchar.h /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h stddef.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h
+
+../config.h:
+
+wchar.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
