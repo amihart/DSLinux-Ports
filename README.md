@@ -18,7 +18,7 @@ Probably the most useful thing in this repository is an updated version of `ssh`
 
 ## ftp
 
-An alternative to `ncft` that ships with DSLinux.
+An alternative to `ncftp` that ships with DSLinux.
 
 ## NFS
 
