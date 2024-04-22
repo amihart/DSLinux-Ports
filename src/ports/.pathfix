@@ -1,0 +1,23 @@
+#If bc-1.07 isn't building, you can
+#  try to patch the paths with this
+cd bc-1.07
+files='
+	config.status
+	config.log
+	Makefile
+	lib/Makefile
+	doc/Makefile
+	bc/Makefile
+	dc/Makefile
+'
+files=$(echo $files | xargs)
+badpt=$1
+badpt=$(echo $badpt | sed 's/\//\\\//g')
+newpt=$(pwd | sed 's/\//\\\//g')
+
+for i in $files
+do
+	cat $i | sed "s/$badpt/$newpt/" > .tmp
+	mv .tmp $i
+done
+cd ..

@@ -1,0 +1,26 @@
+stubs.c:7:23: error: libiberty.h: No such file or directory
+stubs.c: In function 'getline':
+stubs.c:36: warning: implicit declaration of function 'xmalloc'
+stubs.c:36: warning: assignment makes pointer from integer without a cast
+stubs.c:47: warning: implicit declaration of function 'xrealloc'
+stubs.c:47: warning: assignment makes pointer from integer without a cast
+stubs.c: In function 'fatal':
+stubs.c:55: error: 'va_list' undeclared (first use in this function)
+stubs.c:55: error: (Each undeclared identifier is reported only once
+stubs.c:55: error: for each function it appears in.)
+stubs.c:55: error: syntax error before 'args'
+stubs.c:57: warning: implicit declaration of function 'va_start'
+stubs.c:57: error: 'args' undeclared (first use in this function)
+stubs.c:61: warning: implicit declaration of function 'va_end'
+stubs.c: In function 'fatal_perror':
+stubs.c:69: error: 'va_list' undeclared (first use in this function)
+stubs.c:69: error: syntax error before 'args'
+stubs.c:71: error: 'args' undeclared (first use in this function)
+stubs.c: In function 'append_option':
+stubs.c:93: warning: initialization makes pointer from integer without a cast
+stubs.c: In function 'append_option_str':
+stubs.c:108: warning: implicit declaration of function 'xstrdup'
+stubs.c:108: warning: initialization makes pointer from integer without a cast
+stubs.c: In function 'append_options':
+stubs.c:122: warning: initialization makes pointer from integer without a cast
+make[2]: *** [stubs.o] Error 1

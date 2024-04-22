@@ -1,0 +1,40 @@
+hard-locale.o hard-locale.o: hard-locale.c ../config.h hard-locale.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stdbool.h locale.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/locale.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h stddef.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_locale.h \
+  setlocale_null.h arg-nonnull.h string.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/string.h
+
+../config.h:
+
+hard-locale.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stdbool.h:
+
+locale.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/locale.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_locale.h:
+
+setlocale_null.h:
+
+arg-nonnull.h:
+
+string.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/string.h:

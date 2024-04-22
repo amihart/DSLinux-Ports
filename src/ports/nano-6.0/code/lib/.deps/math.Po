@@ -1,0 +1,31 @@
+math.o math.o: math.c ../config.h math.h math.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/math.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/huge_val.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/nan.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/mathdef.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/mathcalls.h
+
+../config.h:
+
+math.h:
+
+math.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/math.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/huge_val.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/nan.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/mathdef.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/mathcalls.h:

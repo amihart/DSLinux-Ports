@@ -1,0 +1,48 @@
+memchr.o memchr.o: memchr.c ../config.h string.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/string.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h stddef.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h limits.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/limits.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/limits.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/posix1_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/local_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/linux/limits.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/posix2_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/xopen_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/stdio_lim.h
+
+../config.h:
+
+string.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/string.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
+
+limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/limits.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/posix1_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/local_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/linux/limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/posix2_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/xopen_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/stdio_lim.h:

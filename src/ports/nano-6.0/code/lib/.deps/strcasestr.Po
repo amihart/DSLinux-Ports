@@ -1,0 +1,125 @@
+strcasestr.o strcasestr.o: strcasestr.c ../config.h string.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/string.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h stddef.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h ctype.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/ctype.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_ctype.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stdbool.h strings.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/strings.h str-two-way.h \
+  limits.h /home/home/diskb/mnt/dslinux/uClibc/include/limits.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/limits.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/posix1_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/local_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/linux/limits.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/posix2_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/xopen_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/stdio_lim.h stdint.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/stdint.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/wchar.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/wordsize.h sys/types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/types.h time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/endian.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/endian.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/select.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/select.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigset.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h inttypes.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/inttypes.h
+
+../config.h:
+
+string.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/string.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
+
+ctype.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/ctype.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_ctype.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stdbool.h:
+
+strings.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/strings.h:
+
+str-two-way.h:
+
+limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/limits.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/posix1_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/local_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/linux/limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/posix2_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/xopen_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/stdio_lim.h:
+
+stdint.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/stdint.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/wchar.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/wordsize.h:
+
+sys/types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/types.h:
+
+time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/endian.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/endian.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/select.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/select.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigset.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:
+
+inttypes.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/inttypes.h:
