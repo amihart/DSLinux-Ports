@@ -24,6 +24,10 @@ The `kernel.nds` is a kernel built with support for mounting drives over the net
 
 The version of `nano` that comes with DSLinux is `1.2.5`. The version here is much more up to date at `6.0.0`. The package also includes syntax highlighting profiles for Lua and shell scripts. 
 
+## fiboanacci
+
+The package `fibonacci.tar` is not actually a port but merely an example of how you can make a package for DSLinux with Lua. 
+
 ## ftp
 
 An alternative to `ncftp` that ships with DSLinux.
