@@ -16,13 +16,17 @@ The `lua.tar` package contains both the Lua5 interpreter and compiler compiled w
 
 Probably the most useful thing in this repository is an updated version of `ssh` and `scp` which is found in the `dropbear.tar` package. This allows you to SSH into a modern device without having to downgrade your security in the `/etc/ssh/sshd_config` settings.
 
+## NFS
+
+The `kernel.nds` is a kernel built with support for mounting drives over the network with NFSv2 or NFSv3. The kernel also fixes the `Unknown error` issue as it is compiles with error messages.
+
+## nano
+
+The version of `nano` that comes with DSLinux is `1.2.5`. The version here is much more up to date at `6.0.0`. The package also includes syntax highlighting profiles for Lua and shell scripts. 
+
 ## ftp
 
 An alternative to `ncftp` that ships with DSLinux.
-
-## NFS
-
-The `kernel.tar` is a kernel built with support for mounting drives over the network with NFSv2 or NFSv3.
 
 ## awk
 
