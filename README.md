@@ -30,7 +30,7 @@ This version opens a bit slowly on the NDS, so I also ported `texor` which is th
 
 ## fibonacci
 
-The package `fibonacci.tar` is not actually a port but merely an example of how you can make a package for DSLinux with Lua. 
+The package `fibonacci.tar` is not actually a port but merely an example of how you can make a package for DSLinux with Lua. The package is distributed using a shell script in `/usr/bin/` which calls the Lua script in `/usr/share`. The package is distributed with the Lua source code, but if you compile with `luac` you can also distribute the package with a binary. For some reason, if you compile with `luac` on your PC and transfer it to your NDS, it gives an error when you try to run it. You have to compile it with `luac` on the NDS itself. Not entirely sure why, it might be an endianness issue, or something else. 
 
 ## ftp
 
