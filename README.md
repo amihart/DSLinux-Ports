@@ -1,4 +1,4 @@
-An expansion for DSLinux
+![image](https://github.com/amihart/DSLinux-Ports/assets/6305912/b6d9b071-7fa0-4fa1-aebb-4e0a8ef1647f)An expansion for DSLinux
 
 Install packages from the www/ folder by running...
 
@@ -23,6 +23,8 @@ The `kernel.nds` is a kernel built with support for mounting drives over the net
 ## nano
 
 The version of `nano` that comes with DSLinux is `1.2.5`. The version here is much more up to date at `6.0.0`. The package also includes syntax highlighting profiles for Lua and shell scripts. 
+
+![image](https://github.com/amihart/DSLinux-Ports/assets/6305912/2b9fa029-c5b8-4f07-be5e-7093928e2037)
 
 ## fibonacci
 
