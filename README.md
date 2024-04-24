@@ -26,6 +26,8 @@ The version of `nano` that comes with DSLinux is `1.2.5`. The version here is mu
 
 ![image](https://github.com/amihart/DSLinux-Ports/assets/6305912/eef2cd73-a2cb-4bd8-9877-1ef7505b4048)
 
+This version opens a bit slowly on the NDS, so I also ported `texor` which is the simplest text editor I'm aware of that is actually decent, so if you want to do a quick edit and don't care about the fancy nano features, then you can use `texor`.
+
 ## fibonacci
 
 The package `fibonacci.tar` is not actually a port but merely an example of how you can make a package for DSLinux with Lua. 
