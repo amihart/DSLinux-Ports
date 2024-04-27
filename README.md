@@ -32,6 +32,10 @@ This version opens a bit slowly on the NDS, so I also ported `texor` which is th
 
 The package `fibonacci.tar` is not actually a port but merely an example of how you can make a package for DSLinux with Lua. The package is distributed using a shell script in `/usr/bin/` which calls the Lua script in `/usr/share`. The package is distributed with the Lua source code, but if you compile with `luac` you can also distribute the package with a binary. For some reason, if you compile with `luac` on your PC and transfer it to your NDS, it gives an error when you try to run it. You have to compile it with `luac` on the NDS itself. Not entirely sure why, it might be an endianness issue, or something else. 
 
+## picoc
+
+Sadly, there will likely never be `gcc` ported to run on DSLinux itself. Apparently, it has to be patched to even handle memory correctly, and I am unsure how the original developers patched it to make their x86 version. The best alternative would be a C interpreter which could be compiled targeting DSLinux in the x86 version of `gcc`, and thus should handle memory correctly. This is what `picoc` is, a port of the last version (as it seems to be abandoned) of the `picoc` C interpreter. It is not a compiler but interprets C code as scripts. It is possible to make packages with it using the same method as shown with `fibonacci` above.
+
 ## ftp
 
 An alternative to `ncftp` that ships with DSLinux.
