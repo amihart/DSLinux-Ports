@@ -50,7 +50,7 @@ The version of `wget` here in the `wget.tar` package is a later version but with
 
 ## zedex
 
-The `zedex` interpreter is a custom interpreter I've written that allows you to write programs for Linux systems using the Small Device C Compiler. This is slower than writing native applications, but might be more convenient if you just want to put something together quickly, as it allows you to run code in DSLinux that has been compiled using a modern compiler (it requires at least SDCC v4.2 to work). You can follow the README at [my other repository](https://github.com/amihart/Zedex/) to learn how to compile code that can be ran with `zedex`. Inside of the `conf/` folder in that repository is a `unistd.h.arm` file that I generated for DSLinux, so you do not need to generate it yourself, but you can if you wish.
+The `zedex` interpreter is a custom interpreter I've written that allows you run programs on Linux systems compiled with the Small Device C Compiler. This is slower than writing native applications, but might be more convenient if you just want to put something together quickly, as it allows you to run code in DSLinux that has been compiled using a modern compiler (it requires at least SDCC v4.2 to work). You can follow the README at [my other repository](https://github.com/amihart/Zedex/) to learn how to compile code that can be ran with `zedex`. Inside of the `conf/` folder in that repository is a `unistd.h.arm` file that I generated for DSLinux, so you do not need to generate it yourself, but you can if you wish.
 
 
 
