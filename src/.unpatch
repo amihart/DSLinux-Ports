@@ -1,0 +1,2 @@
+cp patch/string.h $ROOTDIR/uClibc/include/string.h
+cp patch/sysmacros.h $ROOTDIR/uClibc/include/sys/sysmacros.h

@@ -1,0 +1,110 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:554: checking for Cygwin environment
+configure:587: checking for mingw32 environment
+configure:664: checking host system type
+configure:685: checking target system type
+configure:703: checking build system type
+configure:728: checking for gcc
+configure:841: checking whether the C compiler (ucfront-gcc arm-linux-elf-gcc  -O2 -g -fomit-frame-pointer -fno-common -fno-builtin -Wall  -mswp-byte-writes -DCONFIG_NDS_ROM8BIT -mcpu=arm946e-s -mfpu=fpe3 -DEMBED -D__PIC__ -fpic -msingle-pic-base -Dlinux -D__linux__ -Dunix -D__uClinux__ -Wl,-elf2flt -D__PIC__ -fpic -msingle-pic-base -mswp-byte-writes) works
+configure:857: ucfront-gcc arm-linux-elf-gcc  -o conftest -O2 -g -fomit-frame-pointer -fno-common -fno-builtin -Wall  -mswp-byte-writes -DCONFIG_NDS_ROM8BIT -mcpu=arm946e-s -mfpu=fpe3 -DEMBED -D__PIC__ -fpic -msingle-pic-base -Dlinux -D__linux__ -Dunix -D__uClinux__  -Wl,-elf2flt -D__PIC__ -fpic -msingle-pic-base -mswp-byte-writes conftest.c  1>&5
+configure:854: warning: return type defaults to 'int'
+No relocations in code!
+configure:883: checking whether the C compiler (ucfront-gcc arm-linux-elf-gcc  -O2 -g -fomit-frame-pointer -fno-common -fno-builtin -Wall  -mswp-byte-writes -DCONFIG_NDS_ROM8BIT -mcpu=arm946e-s -mfpu=fpe3 -DEMBED -D__PIC__ -fpic -msingle-pic-base -Dlinux -D__linux__ -Dunix -D__uClinux__ -Wl,-elf2flt -D__PIC__ -fpic -msingle-pic-base -mswp-byte-writes) is a cross-compiler
+configure:888: checking whether we are using GNU C
+configure:916: checking whether ucfront-gcc arm-linux-elf-gcc  accepts -g
+configure:948: checking for POSIXized ISC
+configure:986: checking for a BSD compatible install
+configure:1039: checking whether build environment is sane
+configure:1096: checking whether make sets ${MAKE}
+configure:1142: checking for working aclocal
+configure:1155: checking for working autoconf
+configure:1168: checking for working automake
+configure:1181: checking for working autoheader
+configure:1194: checking for working makeinfo
+configure:1217: checking for ar
+configure:1249: checking for ranlib
+configure:1396: checking for ld used by GCC
+configure:1464: checking if the linker (arm-linux-elf-ld) is GNU ld
+configure:1481: checking for arm-linux-elf-ld option to reload object files
+configure:1493: checking for BSD-compatible nm
+configure:1531: checking whether ln -s works
+configure:1552: checking how to recognise dependant libraries
+configure:1725: checking for object suffix
+configure:1751: checking for executable suffix
+configure:1788: checking for file
+configure:1921: checking for ranlib
+configure:1988: checking for strip
+ltconfig:678:checking for ucfront-gcc option to produce PIC
+ltconfig:687:checking that ucfront-gcc PIC flag  -fPIC -DPIC works.
+ltconfig:749: checking if ucfront-gcc static flag -static works
+ltconfig:780: finding the maximum length of command line arguments
+ltconfig:@lineno@: result: 49153
+ltconfig:887: checking if ucfront-gcc supports -fno-rtti -fno-exceptions
+ltconfig:888: ucfront-gcc arm-linux-elf-gcc  -c -O2 -g -fomit-frame-pointer -fno-common -fno-builtin -Wall  -mswp-byte-writes -DCONFIG_NDS_ROM8BIT -mcpu=arm946e-s -mfpu=fpe3 -DEMBED -D__PIC__ -fpic -msingle-pic-base -Dlinux -D__linux__ -Dunix -D__uClinux__ -fno-rtti -fno-exceptions -c conftest.c  conftest.c 1>&5
+ltconfig:1431: checking if global_symbol_pipe works
+ltconfig:1432: ucfront-gcc arm-linux-elf-gcc  -c -O2 -g -fomit-frame-pointer -fno-common -fno-builtin -Wall  -mswp-byte-writes -DCONFIG_NDS_ROM8BIT -mcpu=arm946e-s -mfpu=fpe3 -DEMBED -D__PIC__ -fpic -msingle-pic-base -Dlinux -D__linux__ -Dunix -D__uClinux__  conftest.c 1>&5
+ltconfig:1435: eval "/usr/bin/nm -B conftest.o | sed -n -e 's/^.*[ 	]\([ABCDGISTW][ABCDGISTW]*\)[ 	][ 	]*\(\)\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2\3 \3/p' > conftest.nm"
+ltconfig:1487: ucfront-gcc arm-linux-elf-gcc  -o conftest -O2 -g -fomit-frame-pointer -fno-common -fno-builtin -Wall  -mswp-byte-writes -DCONFIG_NDS_ROM8BIT -mcpu=arm946e-s -mfpu=fpe3 -DEMBED -D__PIC__ -fpic -msingle-pic-base -Dlinux -D__linux__ -Dunix -D__uClinux__ -fno-builtin  -Wl,-elf2flt -D__PIC__ -fpic -msingle-pic-base -mswp-byte-writes conftest.c conftstm.o 1>&5
+conftest.c:6: warning: 'main' is usually a function
+configure:2313: checking whether to enable maintainer-specific portions of Makefiles
+configure:2336: checking whether to install libbfd
+configure:2373: checking for executable suffix
+configure:2409: checking for gcc
+configure:2522: checking whether the C compiler (ucfront-gcc arm-linux-elf-gcc  -O2 -g -fomit-frame-pointer -fno-common -fno-builtin -Wall  -mswp-byte-writes -DCONFIG_NDS_ROM8BIT -mcpu=arm946e-s -mfpu=fpe3 -DEMBED -D__PIC__ -fpic -msingle-pic-base -Dlinux -D__linux__ -Dunix -D__uClinux__ -Wl,-elf2flt -D__PIC__ -fpic -msingle-pic-base -mswp-byte-writes) works
+configure:2538: ucfront-gcc arm-linux-elf-gcc  -o conftest.gdb -O2 -g -fomit-frame-pointer -fno-common -fno-builtin -Wall  -mswp-byte-writes -DCONFIG_NDS_ROM8BIT -mcpu=arm946e-s -mfpu=fpe3 -DEMBED -D__PIC__ -fpic -msingle-pic-base -Dlinux -D__linux__ -Dunix -D__uClinux__  -Wl,-elf2flt -D__PIC__ -fpic -msingle-pic-base -mswp-byte-writes conftest.c  1>&5
+configure:2535: warning: return type defaults to 'int'
+No relocations in code!
+configure:2564: checking whether the C compiler (ucfront-gcc arm-linux-elf-gcc  -O2 -g -fomit-frame-pointer -fno-common -fno-builtin -Wall  -mswp-byte-writes -DCONFIG_NDS_ROM8BIT -mcpu=arm946e-s -mfpu=fpe3 -DEMBED -D__PIC__ -fpic -msingle-pic-base -Dlinux -D__linux__ -Dunix -D__uClinux__ -Wl,-elf2flt -D__PIC__ -fpic -msingle-pic-base -mswp-byte-writes) is a cross-compiler
+configure:2569: checking whether we are using GNU C
+configure:2597: checking whether ucfront-gcc arm-linux-elf-gcc  accepts -g
+configure:2631: checking how to run the C preprocessor
+configure:2713: checking for ranlib
+configure:2741: checking for ANSI C header files
+configure:2845: checking for working const
+configure:2920: checking for inline
+configure:2960: checking for off_t
+configure:2993: checking for size_t
+configure:3028: checking for working alloca.h
+configure:3061: checking for alloca
+configure:3263: checking for stdlib.h
+configure:3263: checking for unistd.h
+configure:3263: checking for sys/stat.h
+configure:3263: checking for sys/types.h
+configure:3302: checking for getpagesize
+configure:3355: checking for working mmap
+configure:3544: checking for argz.h
+configure:3544: checking for limits.h
+configure:3544: checking for locale.h
+configure:3544: checking for nl_types.h
+configure:3544: checking for malloc.h
+configure:3544: checking for string.h
+configure:3544: checking for unistd.h
+configure:3544: checking for values.h
+configure:3544: checking for sys/param.h
+configure:3584: checking for getcwd
+configure:3584: checking for munmap
+configure:3584: checking for putenv
+configure:3584: checking for setenv
+configure:3584: checking for setlocale
+configure:3584: checking for strchr
+configure:3584: checking for strcasecmp
+configure:3584: checking for __argz_count
+configure:3584: checking for __argz_stringify
+configure:3584: checking for __argz_next
+configure:3703: checking for LC_MESSAGES
+configure:3736: checking whether NLS is requested
+configure:3756: checking whether included gettext is requested
+configure:3775: checking for libintl.h
+configure:3802: checking for gettext in libc
+configure:3830: checking for bindtextdomain in -lintl
+configure:4102: checking for msgfmt
+configure:4136: checking for gmsgfmt
+configure:4172: checking for xgettext
+configure:4262: checking for catalogs to be installed
+configure:4378: checking for build system executable suffix
+configure:4415: checking for a BSD compatible install
+configure:4472: checking for string.h
+configure:4472: checking for strings.h
+configure:4472: checking for stdlib.h

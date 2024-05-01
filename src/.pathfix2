@@ -1,0 +1,22 @@
+#If bc-1.07 isn't building, you can
+#  try to patch the paths with this
+whereto=nano-6.0
+badpt='\/ports\/nano\/'
+cd $whereto
+files=$(grep -ri $badpt | sed 's/:.*//' | uniq | grep -vi 'binary' | xargs)
+echo $files
+pwd
+
+#badpt=$(echo $badpt  | sed 's/\//\\\//g' | sed 's/\./\\\./g') #| sed 's/\-/\\\-/g')
+newpt=$(echo $(pwd)/ | sed 's/\//\\\//g' | sed 's/\./\\\./g') #| sed 's/\-/\\\-/g')
+
+for i in $files
+do
+	echo A $badpt A
+	echo B $newpt B
+
+	echo "s/$badpt/$newpt/g"
+	cat $i | sed "s/$badpt/$newpt/g" > .tmp
+	mv .tmp $i
+done
+cd ..

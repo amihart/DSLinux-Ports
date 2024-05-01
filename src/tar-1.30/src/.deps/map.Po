@@ -1,0 +1,349 @@
+map.o map.o: map.c ../lib/system.h ../config.h ../gnu/alloca.h \
+  ../gnu/sys/types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h \
+  ../gnu/stddef.h /home/home/diskb/mnt/dslinux/include/gcc/stddef.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h ../gnu/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/endian.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/endian.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/select.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/select.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigset.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/ctype.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_ctype.h \
+  ../gnu/string.h /home/home/diskb/mnt/dslinux/uClibc/include/string.h \
+  ../gnu/errno.h /home/home/diskb/mnt/dslinux/uClibc/include/errno.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/errno.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/errno_values.h \
+  ../gnu/fcntl.h /home/home/diskb/mnt/dslinux/uClibc/include/fcntl.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/fcntl.h \
+  ../gnu/sys/stat.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_clk_tck.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/stat.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/stat.h ../gnu/unistd.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/unistd.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/posix_opt.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/environments.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/wordsize.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/confname.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/getopt.h \
+  ../gnu/getopt-cdefs.h ../gnu/getopt-pfx-core.h ../gnu/getopt-core.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/wait.h ../gnu/signal.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/signal.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/signum.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/siginfo.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigaction.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigcontext.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/asm/sigcontext.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigstack.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/ucontext.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/ucontext.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/procfs.h \
+  ../gnu/sys/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/user.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigthread.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/resource.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/resource.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/waitflags.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/waitstatus.h \
+  ../gnu/stdlib.h /home/home/diskb/mnt/dslinux/uClibc/include/stdlib.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stdbool.h ../gnu/stdio.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/stdio.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_stdio.h \
+  ../gnu/wchar.h /home/home/diskb/mnt/dslinux/uClibc/include/wchar.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/wchar.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stdarg.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/stdio_lim.h \
+  ../gnu/limits.h /home/home/diskb/mnt/dslinux/uClibc/include/limits.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/limits.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/posix1_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/local_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/linux/limits.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/posix2_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/xopen_lim.h \
+  ../gnu/inttypes.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/inttypes.h ../gnu/stdint.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/stdint.h ../gnu/intprops.h \
+  ../gnu/locale.h /home/home/diskb/mnt/dslinux/uClibc/include/locale.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_locale.h \
+  ../gnu/dirname.h ../gnu/dosname.h ../gnu/error.h ../gnu/savedir.h \
+  ../gnu/dirent.h /home/home/diskb/mnt/dslinux/uClibc/include/dirent.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/dirent.h \
+  ../gnu/unlocked-io.h ../gnu/xalloc.h ../gnu/xalloc-oversized.h \
+  ../gnu/gettext.h /home/home/diskb/mnt/dslinux/uClibc/include/libintl.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/pwd.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/grp.h common.h tar.h \
+  arith.h ../gnu/backupfile.h ../gnu/exclude.h ../gnu/full-write.h \
+  ../gnu/modechange.h ../gnu/quote.h ../gnu/safe-read.h \
+  ../gnu/stat-time.h ../gnu/timespec.h ../gnu/verify.h ../gnu/obstack.h \
+  ../gnu/progname.h ../gnu/xvasprintf.h ../lib/paxlib.h ../gnu/inttostr.h \
+  ../gnu/intprops.h xattrs.h ../lib/wordsplit.h ../gnu/hash.h
+
+../lib/system.h:
+
+../config.h:
+
+../gnu/alloca.h:
+
+../gnu/sys/types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h:
+
+../gnu/stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h:
+
+../gnu/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/endian.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/endian.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/select.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/select.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigset.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/ctype.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_ctype.h:
+
+../gnu/string.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/string.h:
+
+../gnu/errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/errno_values.h:
+
+../gnu/fcntl.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/fcntl.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/fcntl.h:
+
+../gnu/sys/stat.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_clk_tck.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/stat.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/stat.h:
+
+../gnu/unistd.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/unistd.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/posix_opt.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/environments.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/wordsize.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/confname.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/getopt.h:
+
+../gnu/getopt-cdefs.h:
+
+../gnu/getopt-pfx-core.h:
+
+../gnu/getopt-core.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/wait.h:
+
+../gnu/signal.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/signal.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/signum.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/siginfo.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigaction.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigcontext.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/asm/sigcontext.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigstack.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/ucontext.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/ucontext.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/procfs.h:
+
+../gnu/sys/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/user.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigthread.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/resource.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/resource.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/waitflags.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/waitstatus.h:
+
+../gnu/stdlib.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/stdlib.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stdbool.h:
+
+../gnu/stdio.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/stdio.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_stdio.h:
+
+../gnu/wchar.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/wchar.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/wchar.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stdarg.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/stdio_lim.h:
+
+../gnu/limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/limits.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/posix1_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/local_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/linux/limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/posix2_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/xopen_lim.h:
+
+../gnu/inttypes.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/inttypes.h:
+
+../gnu/stdint.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/stdint.h:
+
+../gnu/intprops.h:
+
+../gnu/locale.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/locale.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_locale.h:
+
+../gnu/dirname.h:
+
+../gnu/dosname.h:
+
+../gnu/error.h:
+
+../gnu/savedir.h:
+
+../gnu/dirent.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/dirent.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/dirent.h:
+
+../gnu/unlocked-io.h:
+
+../gnu/xalloc.h:
+
+../gnu/xalloc-oversized.h:
+
+../gnu/gettext.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/libintl.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/pwd.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/grp.h:
+
+common.h:
+
+tar.h:
+
+arith.h:
+
+../gnu/backupfile.h:
+
+../gnu/exclude.h:
+
+../gnu/full-write.h:
+
+../gnu/modechange.h:
+
+../gnu/quote.h:
+
+../gnu/safe-read.h:
+
+../gnu/stat-time.h:
+
+../gnu/timespec.h:
+
+../gnu/verify.h:
+
+../gnu/obstack.h:
+
+../gnu/progname.h:
+
+../gnu/xvasprintf.h:
+
+../lib/paxlib.h:
+
+../gnu/inttostr.h:
+
+../gnu/intprops.h:
+
+xattrs.h:
+
+../lib/wordsplit.h:
+
+../gnu/hash.h:

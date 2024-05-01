@@ -1,0 +1,134 @@
+<html>
+<body>
+<textarea style='display: none;' id='headerFile'>
+__REPLACE__
+</textarea>
+<script type='text/javascript'>
+function addColor(t, e, c) {
+	while (t.replace(e, "") != t) {
+		t = t.replace(e, "<span style='color: " + c + ";'>~~~~</span>");
+	}
+	while (t.replace("~~~~", "") != t) {
+		t = t.replace("~~~~", e);
+	}
+	return t;
+}
+function displayEntry(e) {
+	var ndoc = "";
+	var doBR = 0;
+	for (var i = 0; i < e.documentation.length; i++) {
+		ndoc += e.documentation.charAt(i);
+		if (i % 80 == 0 && i != 0) {
+			doBR = 1;
+		}
+		if (doBR && e.documentation.charAt(i) == " ") {
+			ndoc += "<br />";
+			doBR = 0;
+		}
+	}
+	var p = document.createElement("p");
+	p.style.color = "blue";
+	p.innerHTML = ndoc;
+	var p2 = document.createElement("p");
+	p2.style.color = "gray";
+	p2.innerHTML = e.signature;
+	p2.innerHTML = "<b>" + p2.innerHTML + "</b>";
+	p2.innerHTML = addColor(p2.innerHTML, "void", "darkgreen");
+	p2.innerHTML = addColor(p2.innerHTML, "unsigned", "darkgreen");
+	p2.innerHTML = addColor(p2.innerHTML, "short", "darkgreen");
+	p2.innerHTML = addColor(p2.innerHTML, "z_Machine", "darkgreen");
+	p2.innerHTML = addColor(p2.innerHTML, "mm", "darkred");
+	p2.innerHTML = addColor(p2.innerHTML, "reg", "darkred");
+	p2.innerHTML = addColor(p2.innerHTML, "addr", "darkred");
+	p2.innerHTML = addColor(p2.innerHTML, "num", "darkred");
+	p2.innerHTML = addColor(p2.innerHTML, "val", "darkred");
+	document.body.appendChild(p);
+	document.body.appendChild(p2);
+
+}
+var $ = function(q) {return document.querySelector(q);}
+var headerFile = $("#headerFile").value.split("\n");
+var entriesToDisplay = new Array(0);
+var constantsToDisplay = new Array(0);
+var structsToDisplay = new Array(0);
+for (var i = 0; i < headerFile.length; i++) {
+	if (headerFile[i].includes("//!show func")) {
+		headerFile[i] = headerFile[i].replace("//!show func", "");
+		var signature = headerFile[i];//.replace("extern ", "");
+		var documentationArray = new Array(0);
+		for (var j = i - 1; headerFile[j].trim().substr(0, 2) == "//"; j--) {
+			documentationArray.push(headerFile[j].trim().replace("//", ""));
+		}
+		var documentation = documentationArray.reverse().join(" ");
+		entriesToDisplay.push({'signature': signature, 'documentation': documentation});
+	}
+	var f = "#define z_";
+	if (headerFile[i].trim().substr(0, f.length) == f) {
+		f = headerFile[i].split(" ");
+		constantsToDisplay.push({'name': f[1], 'value': f[2]});
+	}
+	f = "//!show struct";
+	if (headerFile[i].replace(f, "") != headerFile[i]) {
+		structsToDisplay.push(headerFile[i].replace(f, ""));
+	}
+}
+var div = document.createElement("div");
+//div.style = "page-break-before:always";
+var h3 = document.createElement("h3");
+h3.style.color = "black";
+h3.innerHTML = "<b>Functions</b>";
+document.body.appendChild(h3);
+for (var i = 0; i < entriesToDisplay.length; i++) {
+	displayEntry(entriesToDisplay[i]);
+}
+var h32 = document.createElement("h3");
+h32.style.color = "black";
+h32.innerHTML = "<b>Constants</b>";
+div.appendChild(h32);
+var tbl = document.createElement("table");
+tbl.border= 1;
+tbl.style = "text-align: center;";
+for (var i = -1; i < constantsToDisplay.length; i++) {
+	var th = document.createElement("tr");
+	var td1 = document.createElement("td");
+	var td2 = document.createElement("td");
+	if (i == -1) {
+		td1.innerHTML = "NAME";
+		td2.innerHTML = "VALUE";
+		th.style.backgroundColor = "lightgray";
+	} else {
+		td1.innerHTML = constantsToDisplay[i].name;
+		td2.innerHTML = constantsToDisplay[i].value;
+	}
+	th.appendChild(td1);
+	th.appendChild(td2);
+	tbl.appendChild(th);
+}
+div.appendChild(tbl);
+document.body.appendChild(div);
+
+var h33 = document.createElement("h3");
+h33.style.color = "black";
+h33.innerHTML = "<b>Structs</b>";
+document.body.appendChild(h33);
+var txt = "";
+for (var i = 0; i < structsToDisplay.length; i++) {
+	if (structsToDisplay[i].trim().substr(0, 2) == "//") {
+		txt += "<b style='color: blue;'>" + structsToDisplay[i] + "</b>\n";
+	} else {
+		txt += "<b>" + structsToDisplay[i] + "</b>\n";
+	}
+}
+txt = addColor(txt, "void", "darkgreen");
+txt = addColor(txt, "unsigned", "darkgreen");
+txt = addColor(txt, "short", "darkgreen");
+txt = addColor(txt, "char", "darkgreen");
+txt = addColor(txt, "z_Machine", "darkgreen");
+txt = addColor(txt, "typedef", "darkgreen");
+txt = addColor(txt, "struct ", "darkgreen");
+var pre = document.createElement("pre");
+pre.innerHTML = txt;
+document.body.appendChild(pre);
+</script>
+</body>
+</html>

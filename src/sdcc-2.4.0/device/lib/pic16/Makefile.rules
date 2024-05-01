@@ -1,0 +1,70 @@
+#
+# Makefile.rules - contains make rules for building
+# 			sources in each directory
+#
+# This file is part of the GNU PIC Library.
+#
+# January, 2004
+# The GNU PIC Library is maintained by,
+# 	Vangelis Rokas <vrokas@otenet.gr>
+#
+# $Id: Makefile.rules,v 1.3 2004/01/16 15:06:34 vrokas Exp $
+#
+#
+
+# Mind thatthis makefile is included from the
+# subdirs, so fix apropriately the paths
+
+include ../Makefile.common
+
+# The SDCC project directory
+PRJDIR	= ../../../..
+
+# headers directory
+INCDIR	= $(PRJDIR)/device/include
+
+# pic16 port specific headers
+PIC16_INCDIR	= $(INCDIR)/pic16
+
+COMPILE_FLAGS	= --pomit-config-words --pomit-ivt --no-peep
+COMPILE_FLAGS	+= --nostdinc
+
+CFLAGS	= -I$(PIC16_INCDIR) $(MODELFLAGS)
+MM	= -MM
+
+# Input
+# SRC		is the source to compile
+
+OFILES	= $(CFILES:.c=.o)
+
+.c.o:
+	$(CC) $(CFLAGS) $(COMPILE_FLAGS) -c $<
+
+all: make-object
+
+make-target: make-object
+
+
+$(OFILES): $(CFILES)
+
+make-object: $(OFILES)
+
+
+clean-intermediate:
+	$(RM) -f *.lst *.asm *.dump*
+	
+clean: clean-intermediate
+	$(RM) -f *.o
+
+real-clean: clean
+	$(RM) -f .depend
+
+dep .depend:
+	rm -f .depend
+	for temp in $(CFILES); do		\
+		$(CPP) $(MM) $(CFLAGS) $$temp > .tmpdepend;	\
+		$(SED) s/.rel/.o/g .tmpdepend >> .depend;	\
+		$(RM) -f .tmpdepend;	\
+	done
+	
+include .depend

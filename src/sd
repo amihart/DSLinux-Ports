@@ -1,0 +1,13 @@
+./gas/as-new.gdb
+./gprof/gprof.gdb
+./binutils/cxxfilt.gdb
+./binutils/objdump.gdb
+./binutils/strings.gdb
+./binutils/size.gdb
+./binutils/objcopy.gdb
+./binutils/ar.gdb
+./binutils/ranlib.gdb
+./binutils/strip-new.gdb
+./binutils/addr2line.gdb
+./binutils/nm-new.gdb
+./ld/ld-new.gdb

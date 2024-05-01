@@ -1,0 +1,29 @@
+basename-lgpl.o basename-lgpl.o: basename-lgpl.c ../config.h dirname.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stdbool.h stddef.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h dosname.h string.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/string.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h
+
+../config.h:
+
+dirname.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stdbool.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
+
+dosname.h:
+
+string.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/string.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:

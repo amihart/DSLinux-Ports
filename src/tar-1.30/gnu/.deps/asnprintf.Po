@@ -1,0 +1,13 @@
+asnprintf.o asnprintf.o: asnprintf.c ../config.h vasnprintf.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stdarg.h stddef.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h
+
+../config.h:
+
+vasnprintf.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stdarg.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:

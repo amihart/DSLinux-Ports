@@ -1,0 +1,9 @@
+#!/bin/sh
+rm -rf pakd
+mkdir pakd
+cd pakd
+mkdir -p usr/bin/ usr/share/
+cp ../bin/* usr/bin/
+cp -r /usr/share/sdcc usr/share/
+rm usr/bin/*.gdb usr/bin/README
+tar -cvf sdcc2.tar usr/

@@ -1,0 +1,70 @@
+#
+# Dejagnu testsuite for kill - part of procps
+#
+set kill ${topdir}kill
+
+if { ![ file exists $kill ] } {
+    untested { skipping (not build)}
+    return
+}
+
+set test "kill with no arguments"
+spawn $kill
+expect_pass "$test" "Usage:\\s+\(lt-\)?kill \\\[options\\\] <pid> \\\[...\\\]\\s+Options:\\s+<pid> \\\[...\\\]\\s+send signal to every <pid> listed\\s+-<signal>, -s, --signal <signal>\\s+specify the <signal> to be sent\\s+-l, --list=\\\[<signal>\\\]\\s+list all signal names, or convert one to a name\\\s+-L, --table\\s+list all signal names in a nice table$usage_help$usage_version$usage_man"
+
+set test "kill list signal names"
+spawn $kill -l
+expect_pass "$test" "^\(\[A-Z12+-\]\\s*\)+$"
+
+set test "kill list signal names in table"
+spawn $kill -L
+expect_pass "$test" "^\(\\s+\\d+ \[A-Z12+-\]+\)+\\s*$"
+
+set test "kill convert signal name to number no space"
+spawn  $kill -lHUP
+expect_pass "$test" "^1\\s*"
+
+set test "kill convert signal name to number with space"
+spawn  $kill -l HUP
+expect_pass "$test" "^1\\s*"
+
+set test "kill convert SIG-prefixed signal name to number no space"
+spawn  $kill -lSIGHUP
+expect_pass "$test" "^1\\s*$"
+
+set test "kill convert SIG-prefixed signal name to number with space"
+spawn  $kill -l SIGHUP
+
+expect_pass "$test" "^1\\s*$"
+
+set test "kill convert signal number to name no space"
+spawn  $kill -l1
+expect_pass "$test" "^HUP\\s*"
+
+set test "kill convert signal number to name with space"
+spawn  $kill -l 1
+expect_pass "$test" "^HUP\\s*"
+
+#set test "kill numbered process"
+#make_testproc
+#if { [ file isdirectory "/proc/$testproc1_pid" ] && [ file isdirectory "/proc/$testproc2_pid" ] } {
+#} else {
+#    perror "Could not start test processes"
+#}
+#exec $kill -KILL $testproc1_pid
+#wait
+#if { [ file exists "/proc/$testproc1_pid" ] } {
+#    exec kill $testproc2_pid
+#    fail "$test (proc 1 exists)"
+#} else {
+#    exec $kill -KILL $testproc2_pid
+#    wait
+#    if { [ file exists "/proc/$testproc2_pid" ] } {
+#        exec kill $testproc2_pid
+#        fail "$test (proc 2 exists)"
+#    } else {
+#        pass "$test"
+#    }
+#}
+## Cleanup
+#exec rm $testproc_path

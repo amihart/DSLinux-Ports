@@ -1,0 +1,15 @@
+./configure \
+	--host=arm-linux \
+	--prefix=/usr \
+	--disable-mcs51-port \
+	--disable-gbz80-port \
+	--disable-avr-port \
+	--disable-ds390-port \
+	--disable-ds400-port \
+	--disable-pic-port \
+	--disable-pic16-port \
+	--disable-xa51-port \
+	--disable-hc08-port \
+	--disable-ucsim \
+	--disable-device-lib-build \
+	--disable-packihx

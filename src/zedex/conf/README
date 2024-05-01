@@ -1,0 +1,11 @@
+In order to use syscalls, you need a table stored at `/usr/share/zedexconf`
+for your specific architecture as well as a `unistd.h` file.
+
+Use `./autogen.sh` to create the needed files.
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+picoc and lua both want to use these
+they are disabled because for some
+reason they compile fine but then
+crash when actually used

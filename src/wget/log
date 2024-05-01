@@ -1,0 +1,175 @@
+NEWS:Previous versions of Wget erroneously sent GET requests for https
+NEWS:** SSL (`https') pages now work if you compile Wget with SSL support;
+Binary file po/gl.gmo matches
+Binary file po/ro.gmo matches
+Binary file po/sr.gmo matches
+Binary file po/en_GB.gmo matches
+Binary file po/ru.gmo matches
+Binary file po/pt_BR.gmo matches
+po/pl.po:"HTTPS (SSL) options:\n"
+po/pl.po:"Opcje HTTPS (SSL):\n"
+Binary file po/sk.gmo matches
+po/gl.po:"HTTPS (SSL) options:\n"
+po/gl.po:"Opcións de HTTPS (SSL):\n"
+po/el.po:"HTTPS (SSL) options:\n"
+Binary file po/sv.gmo matches
+Binary file po/de.gmo matches
+po/hr.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/hr.po:msgstr "Opcije HTTPS-a (SSL-a/TLS-a):\n"
+Binary file po/ja.gmo matches
+po/sk.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/sk.po:msgstr "VoÄ¾by HTTPS (SSL/TLS):\n"
+po/sv.po:"HTTPS (SSL) options:\n"
+po/sv.po:"HTTPS-flaggor (SSL-flaggor):\n"
+po/sv.po:#~ "HTTPS (SSL) options:\n"
+po/sv.po:#~ "HTTPS-flaggor (SSL-flaggor):\n"
+Binary file po/vi.gmo matches
+po/pt_BR.po:"HTTPS (SSL) options:\n"
+po/pt_BR.po:"Opções HTTPS (SSL) :\n"
+Binary file po/hr.gmo matches
+po/sr.po:"HTTPS (SSL) options:\n"
+po/sr.po:"HTTPS (SSL) Ð¸Ð·Ð±Ð¾Ñ€Ð¸:\n"
+po/ru.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/ru.po:msgstr "ïÐÃÉÉ HTTPS (SSL/TLS):\n"
+po/hu.po:"HTTPS (SSL) options:\n"
+po/hu.po:"HTTPS (SSL) opciók:\n"
+Binary file po/sl.gmo matches
+po/it.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/it.po:msgstr "Opzioni HTTPS (SSL/TLS):\n"
+Binary file po/ca.gmo matches
+po/de.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/de.po:msgstr "HTTPS (SSL) Optionen:\n"
+po/de.po:#~ "HTTPS (SSL) options:\n"
+po/de.po:#~ "HTTPS (SSL) Optionen:\n"
+Binary file po/fr.gmo matches
+po/vi.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/vi.po:msgstr "TÃ¹y chá»n HTTPS (SSL/TLS):\n"
+po/tr.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/tr.po:msgstr "HTTPS (SSL/TLS) seÃ§enekleri:\n"
+po/tr.po:#~ "HTTPS (SSL) options:\n"
+po/tr.po:#~ "HTTPS (SSL) seÃ§enekleri:\n"
+po/nl.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/nl.po:msgstr "HTTPS-opties (SSL/TLS):\n"
+Binary file po/uk.gmo matches
+Binary file po/it.gmo matches
+po/ja.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/ja.po:msgstr "HTTPS (SSL/TLS) ¥ª¥×¥·¥ç¥ó:\n"
+Binary file po/zh_CN.gmo matches
+Binary file po/eu.gmo matches
+po/en_GB.po:"HTTPS (SSL) options:\n"
+po/en_GB.po:"HTTPS (SSL) options:\n"
+po/fr.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/fr.po:msgstr "HTTPS (SSL/TLS) options:\n"
+po/fr.po:#~ "HTTPS (SSL) options:\n"
+po/fr.po:#~ "Options HTTPS (SSL):\n"
+po/ga.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/ga.po:msgstr "Roghanna HTTPS (SSL/TLS):\n"
+Binary file po/nl.gmo matches
+po/eu.po:"HTTPS (SSL) options:\n"
+po/eu.po:"HTTPS (SSL) aukerak:\n"
+po/eo.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/ro.po:"HTTPS (SSL) options:\n"
+po/ro.po:"Opþiuni HTTPS (SSL):\n"
+Binary file po/ga.gmo matches
+po/et.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/et.po:msgstr "HTTPS (SSL/TLS) võtmed:\n"
+Binary file po/fi.gmo matches
+po/fi.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/fi.po:msgstr "HTTPS (SSL/TLS) -valitsimet:\n"
+Binary file po/hu.gmo matches
+po/uk.po:"HTTPS (SSL) options:\n"
+po/uk.po:"HTTPS (SSL) options:\n"
+Binary file po/tr.gmo matches
+po/ca.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/ca.po:msgstr "Opcions de HTTPS (SSL/TLS):\n"
+Binary file po/zh_TW.gmo matches
+po/zh_CN.po:"HTTPS (SSL) options:\n"
+po/zh_CN.po:"HTTPS (SSL) é€‰é¡¹ï¼š\n"
+po/zh_TW.po:msgid "HTTPS (SSL/TLS) options:\n"
+po/zh_TW.po:msgstr "HTTPS (SSL/TLS) é¸é …ï¼š\n"
+Binary file po/et.gmo matches
+po/sl.po:"HTTPS (SSL) options:\n"
+po/sl.po:" Izbire za HTTPS (SSL):\n"
+ChangeLog:	checks fail, don't just silently build a wget without https
+windows/Makefile.src:# SSL (https) support requires the OpenSSL library (see http://www.openssl.org/).
+src/options.h:  char *http_proxy, *ftp_proxy, *https_proxy;
+Binary file src/progress.o matches
+src/init.c:  { "httpsproxy",	&opt.https_proxy,	cmd_string },
+src/init.c:  xfree_null (opt.https_proxy);
+Binary file src/wget matches
+Binary file src/utils.o matches
+src/cookies.c:				   transmitted over non-https
+Binary file src/cookies.o matches
+Binary file src/retr.o matches
+Binary file src/html-url.o matches
+Binary file src/ftp-basic.o matches
+Binary file src/http.o matches
+src/ChangeLog:	* url.c (rewrite_shorthand_url): Don't rewrite "https://host" to
+src/ChangeLog:	"ftp://https//host" when SSL is not used.
+src/ChangeLog:	* http.c (gethttp): Fix typo: SCHEME_SSL -> SCHEME_HTTPS.
+src/ChangeLog:	-H option) when the parent scheme is https and the child's is
+src/ChangeLog:	* recur.c: recurive downloading for https fixed.
+src/ChangeLog:	init_ssl, so that it has a chance to disable support for https
+src/ChangeLog:	(ssl_init_prng): Disable support for https if seeding the PRNG
+src/ChangeLog:	DEFAULT_HTTPS_PORT when using SSL.
+src/ChangeLog:	and DEFAULT_HTTPS_PORT to the header file so it can be use in the
+src/ChangeLog: 	that "httpsproxy" had been inserted into commands[] out of
+src/ChangeLog:	* http.c: added HTTPS fuctionality
+src/ChangeLog:	* init.c: added opt.httpsproxy
+src/ChangeLog:	* http.c: Added HTTPS fuctionality.
+src/ChangeLog:	* init.c: Added opt.httpsproxy.
+src/ChangeLog:	* url.c: Recognize https.
+src/ChangeLog:	* url.c: Recognize `https://'.
+Binary file src/url.o matches
+Binary file src/recur.o matches
+Binary file src/res.o matches
+Binary file src/init.o matches
+src/main.c:HTTPS (SSL/TLS) options:\n"),
+src/retr.c:      || u->scheme == SCHEME_HTTPS
+src/retr.c:    case SCHEME_HTTPS:
+src/retr.c:      proxy = opt.https_proxy ? opt.https_proxy : getenv ("https_proxy");
+Binary file src/ftp-opie.o matches
+Binary file src/log.o matches
+Binary file src/host.o matches
+Binary file src/connect.o matches
+Binary file src/ftp-ls.o matches
+Binary file src/wget.gdb matches
+src/url.c:  { "https",	"https://", DEFAULT_HTTPS_PORT, 1 },
+src/url.c:     don't support, which may include "https" when compiled without
+src/url.c:   are also similar if one is http (SCHEME_HTTP) and the other is https
+src/url.c:   (SCHEME_HTTPS).  */
+src/url.c:  if ((a == SCHEME_HTTP && b == SCHEME_HTTPS)
+src/url.c:      || (a == SCHEME_HTTPS && b == SCHEME_HTTP))
+Binary file src/netrc.o matches
+src/url.h:#define DEFAULT_HTTPS_PORT 443
+src/url.h:  SCHEME_HTTPS,
+Binary file src/convert.o matches
+Binary file src/main.o matches
+Binary file src/ftp.o matches
+src/http.c:     HTTP and HTTPS can apparently coexist on the same port.  */
+src/http.c:  if (u->scheme == SCHEME_HTTPS)
+src/http.c:	  scheme_disable (SCHEME_HTTPS);
+src/http.c:	   connection to the HTTPS server.  Therefore use the same
+src/http.c:	&& u->scheme != SCHEME_HTTPS
+src/http.c:      if (u->scheme != SCHEME_HTTPS)
+src/http.c:				       u->scheme == SCHEME_HTTPS
+src/http.c:      if (u->scheme == SCHEME_HTTPS)
+src/http.c:				  relevant->scheme == SCHEME_HTTPS,
+src/http.c:      if (proxy && u->scheme == SCHEME_HTTPS)
+src/http.c:      if (conn->scheme == SCHEME_HTTPS)
+README:the Web.  It supports HTTP, HTTPS, and FTP protocols, as well as
+INSTALL:messages and support for "https" URLs.  The "external" dependencies
+INSTALL:  - OpenSSL -- for "https" URLs.
+INSTALL:  --without-ssl           disable SSL autodetection (used for https support)
+doc/ChangeLog:	* wget.texi (HTTPS (SSL/TLS) Options): Explain certificate
+doc/ChangeLog:	* wget.texi (HTTPS (SSL/TLS) Options): Document --random-file.
+Binary file doc/wget.info matches
+doc/wget.1:the Web.  It supports \s-1HTTP\s0, \s-1HTTPS\s0, and \s-1FTP\s0 protocols, as
+doc/wget.1:.SS "\s-1HTTPS\s0 (\s-1SSL/TLS\s0) Options"
+doc/wget.1:.IX Subsection "HTTPS (SSL/TLS) Options"
+doc/wget.1:To support encrypted \s-1HTTP\s0 (\s-1HTTPS\s0) downloads, Wget must be compiled
+doc/wget.texi:the Web.  It supports @sc{http}, @sc{https}, and @sc{ftp} protocols, as
+doc/wget.texi:* HTTPS (SSL/TLS) Options::
+doc/wget.texi:@node HTTPS (SSL/TLS) Options
+doc/wget.texi:@section HTTPS (SSL/TLS) Options
+doc/wget.texi:To support encrypted HTTP (HTTPS) downloads, Wget must be compiled

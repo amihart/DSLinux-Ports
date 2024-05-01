@@ -1,0 +1,138 @@
+modechange.o modechange.o: modechange.c ../config.h modechange.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stdbool.h sys/types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h stddef.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/endian.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/endian.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/select.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/select.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigset.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h sys/stat.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_clk_tck.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/stat.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/stat.h stat-macros.h \
+  xalloc.h stdint.h /home/home/diskb/mnt/dslinux/uClibc/include/stdint.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/wchar.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/wordsize.h limits.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/limits.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/limits.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/posix1_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/local_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/linux/limits.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/posix2_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/xopen_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/stdio_lim.h inttypes.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/inttypes.h \
+  xalloc-oversized.h stdlib.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/stdlib.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/waitflags.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/waitstatus.h alloca.h
+
+../config.h:
+
+modechange.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stdbool.h:
+
+sys/types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h:
+
+time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/endian.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/endian.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/select.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/select.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigset.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:
+
+sys/stat.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_clk_tck.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/stat.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/stat.h:
+
+stat-macros.h:
+
+xalloc.h:
+
+stdint.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/stdint.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/wchar.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/wordsize.h:
+
+limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/limits.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/posix1_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/local_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/linux/limits.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/posix2_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/xopen_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/stdio_lim.h:
+
+inttypes.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/inttypes.h:
+
+xalloc-oversized.h:
+
+stdlib.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/stdlib.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/waitflags.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/waitstatus.h:
+
+alloca.h:

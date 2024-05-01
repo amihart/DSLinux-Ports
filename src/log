@@ -1,0 +1,5 @@
+code/syntax/Makefile code/po/Makefile code/po/Makefile.in code/lib/Makefile code/config.log code/m4/Makefile code/Makefile code/src/Makefile code/config.status code/doc/Makefile
+/ports/nano-6.0
+A \/ports\/nano\/ A
+B \/ports\/nano\-6\.0\/ B
+s/\/ports\/nano\//\/ports\/nano\-6\.0\//g

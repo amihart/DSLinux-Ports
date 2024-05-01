@@ -1,0 +1,8 @@
+xasprintf.o xasprintf.o: xasprintf.c ../config.h xvasprintf.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stdarg.h
+
+../config.h:
+
+xvasprintf.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stdarg.h:

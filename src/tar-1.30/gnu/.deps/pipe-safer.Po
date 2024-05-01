@@ -1,0 +1,100 @@
+pipe-safer.o pipe-safer.o: pipe-safer.c ../config.h unistd-safer.h \
+  unistd.h /home/home/diskb/mnt/dslinux/uClibc/include/unistd.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/posix_opt.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/environments.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/wordsize.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h stddef.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/confname.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/getopt.h sys/types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/types.h time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/endian.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/endian.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/select.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/select.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sigset.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/time.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h \
+  getopt-cdefs.h getopt-pfx-core.h getopt-core.h errno.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/errno.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/errno.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/errno_values.h
+
+../config.h:
+
+unistd-safer.h:
+
+unistd.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/unistd.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/posix_opt.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/environments.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/wordsize.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/confname.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/getopt.h:
+
+sys/types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/types.h:
+
+time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/endian.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/endian.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/select.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/select.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sigset.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/time.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:
+
+getopt-cdefs.h:
+
+getopt-pfx-core.h:
+
+getopt-core.h:
+
+errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/errno_values.h:

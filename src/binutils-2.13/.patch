@@ -1,0 +1,7 @@
+cd code/
+files=$(grep -rE 'LDFLAGS[ \t]*=[ \t]*$' `pwd` | cut -d':' -f1 | uniq)
+for i in $files
+do
+	cat $i | grep -vE 'LDFLAGS[ \t]*=[ \t]*$' > .tmp
+	mv .tmp $i
+done

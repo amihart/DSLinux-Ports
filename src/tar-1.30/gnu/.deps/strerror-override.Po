@@ -1,0 +1,31 @@
+strerror-override.o strerror-override.o: strerror-override.c ../config.h \
+  strerror-override.h errno.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/errno.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/errno.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/errno_values.h \
+  stddef.h /home/home/diskb/mnt/dslinux/include/gcc/stddef.h
+
+../config.h:
+
+strerror-override.h:
+
+errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/errno_values.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:

@@ -1,0 +1,32 @@
+asmain.o: asmain.c asm.h strcmpi.h
+aslex.o: aslex.c asm.h
+assym.o: assym.c alloc.h asm.h strcmpi.h
+assubr.o: assubr.c asm.h
+asnoice.o: asnoice.c asm.h
+asexpr.o: asexpr.c asm.h
+asdata.o: asdata.c asm.h
+aslist.o: aslist.c asm.h
+asout.o: asout.c asm.h
+asstore.o: asstore.c asm.h
+m08ext.o: m08ext.c asm.h m6808.h
+m08pst.o: m08pst.c asm.h m6808.h
+m08mch.o: m08mch.c asm.h m6808.h
+m08adr.o: m08adr.c asm.h m6808.h
+strcmpi.o: strcmpi.c strcmpi.h
+lkmain.o: lkmain.c aslink.h
+lkhead.o: lkhead.c aslink.h
+lkarea.o: lkarea.c aslink.h
+lkdata.o: lkdata.c aslink.h
+lkeval.o: lkeval.c aslink.h
+lklex.o: lklex.c aslink.h
+lksym.o: lksym.c alloc.h aslink.h
+lkrloc.o: lkrloc.c aslink.h
+lklibr.o: lklibr.c aslink.h
+lklist.o: lklist.c aslink.h
+lkihx.o: lkihx.c aslink.h
+lks19.o: lks19.c aslink.h
+lkstore.o: lkstore.c aslink.h
+lknoice.o: lknoice.c aslink.h strcmpi.h
+lkmem.o: lkmem.c aslink.h strcmpi.h
+lkaomf51.o: lkaomf51.c aslink.h
+strcmpi.o: strcmpi.c strcmpi.h

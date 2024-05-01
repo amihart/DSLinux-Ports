@@ -1,0 +1,33 @@
+full-write.o full-write.o: full-write.c ../config.h full-write.h stddef.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h errno.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/errno.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/errno.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/errno_values.h \
+  safe-write.h
+
+../config.h:
+
+full-write.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
+
+errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/errno.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/errno_values.h:
+
+safe-write.h:

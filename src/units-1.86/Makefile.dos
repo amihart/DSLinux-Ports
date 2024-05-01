@@ -1,0 +1,26 @@
+# edit these lines to suit
+CC = cl
+CFLAGS = -O2 -G5 -W3 -Za -nologo
+
+OBJS = units.obj getopt.obj getopt1.obj parse.obj
+# Uncomment this line and edit to suit
+# UDEFINES = -D'UNITSFILE="c:/usr/local/share/units.dat"'
+
+units.exe: $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) $(LIBS)
+
+getopt.obj: getopt.c
+	$(CC) $(CFLAGS) $(CDEFINES) -c getopt.c
+
+getopt1.obj: getopt1.c
+	$(CC) $(CFLAGS) $(CDEFINES) -c getopt1.c
+
+units.obj: units.c
+	$(CC) $(CFLAGS) $(UDEFINES) $(CDEFINES) -c units.c
+
+parse.obj: parse.tab.c
+	$(CC) $(CFLAGS) $(CDEFINES) -c parse.tab.c
+	mv parse.tab.obj parse.obj
+
+clean:
+	rm -f $(OBJS)

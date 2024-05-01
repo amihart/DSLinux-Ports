@@ -1,0 +1,11 @@
+#!/bin/sh
+f="$@"
+f=`echo "$f" | sed 's/.*[.]//'`
+f="/usr/share/nano/$f.nanorc"
+if [ -f "$f" ]
+then
+  /usr/share/nano/binary -f $f $@
+else
+  /usr/share/nano/binary $@
+fi
+

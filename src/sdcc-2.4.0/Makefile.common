@@ -1,0 +1,64 @@
+#
+#
+#
+
+# Version
+VERSION         = 2.4.0
+VERSIONHI       = 2
+VERSIONLO       = 4
+VERSIONP        = 0
+
+# Programs
+SHELL		= /bin/sh
+CC		= ucfront-gcc arm-linux-elf-gcc 
+CPP		= ucfront-gcc arm-linux-elf-gcc  -E
+RANLIB		= arm-linux-elf-ranlib
+INSTALL		= /usr/bin/install -c
+YACC            = bison -y
+LEX             = flex 
+AWK             = gawk
+STRIP           = arm-linux-elf-strip
+prefix          = /usr
+exec_prefix     = ${prefix}
+bindir          = ${exec_prefix}/bin
+libdir          = ${exec_prefix}/lib
+datadir         = ${prefix}/share
+includedir      = ${prefix}/include
+mandir          = ${prefix}/man
+man1dir         = $(mandir)/man1
+man2dir         = $(mandir)/man2
+infodir         = ${prefix}/info
+srcdir          = .
+docdir          = ${datadir}/sdcc/doc
+
+include_dir_suffix = sdcc/include
+lib_dir_suffix     = sdcc/lib
+
+# Modules to enable/disable
+OPT_ENABLE_UCSIM = no
+OPT_ENABLE_DEVICE_LIB_BUILD = no
+OPT_ENABLE_PACKIHX = no
+
+SLIB			= $(PRJDIR)/support/Util
+
+EXEEXT          = 
+transform       = s,x,x,
+
+# Flags
+
+DEFS           += $(subs -DHAVE_CONFIG_H,,-DHAVE_CONFIG_H)
+CPPFLAGS       += $(INCLUDEFLAGS) -I. -I$(PRJDIR) -I$(SLIB)
+CFLAGS         += -Wall -pipe -ggdb -O2 -g -fomit-frame-pointer -fno-common -fno-builtin -Wall  -mswp-byte-writes -DCONFIG_NDS_ROM8BIT -mcpu=arm946e-s -mfpu=fpe3 -DEMBED -D__PIC__ -fpic -msingle-pic-base -Dlinux -D__linux__ -Dunix -D__uClinux__
+LDFLAGS        += -Wl,-elf2flt -D__PIC__ -fpic -msingle-pic-base -mswp-byte-writes
+M_OR_MM         = -MM
+
+EXTRALIBS      += 
+
+# Shared settings between all the sub Makefiles
+# Done here so that we don't have to start a Make from the top levelport
+# directory.
+
+# Library compilation options
+CLEANSPEC = *.lst *.asm *.sym *~ *.cdb *.dep *.rul
+
+OBJ = $(SOURCES:.c=.o)

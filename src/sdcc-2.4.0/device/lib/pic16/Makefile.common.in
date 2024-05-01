@@ -1,0 +1,25 @@
+#
+# Makefile.common - common variables makefile
+#
+# This file is part of the GNU PIC Library.
+#
+# January, 2004
+# The GNU PIC Library is maintained by,
+# 	Vangelis Rokas <vrokas@otenet.gr>
+#
+# $Id: Makefile.common.in,v 1.1 2004/01/12 22:10:38 vrokas Exp $
+#
+#
+
+CC	= $(PRJDIR)/bin/sdcc
+CPP	= $(PRJDIR)/bin/sdcpp
+
+AS	= @GPASM@
+LD	= @GPLINK@
+AR	= @GPLIB@
+
+RM	= @RM@
+CP	= @CP@
+MV	= @MV@
+LS	= @LS@
+SED	= @SED@

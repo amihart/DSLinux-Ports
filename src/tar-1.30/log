@@ -1,0 +1,755 @@
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared '  CC       allocator.o
+  CC       areadlink.o
+  CC       areadlink-with-size.o
+  CC       areadlinkat.o
+  CC       areadlinkat-with-size.o
+  CC       argmatch.o
+  CC       argp-ba.o
+  CC       argp-eexst.o
+  CC       argp-fmtstream.o
+  CC       argp-fs-xinl.o
+  CC       argp-help.o
+  CC       argp-parse.o
+  CC       argp-pin.o
+  CC       argp-pv.o
+  CC       argp-pvh.o
+  CC       argp-xinl.o
+  CC       argp-version-etc.o
+  CC       backupfile.o
+  CC       backup-find.o
+  CC       bitrotate.o
+  CC       c-ctype.o
+  CC       c-strcasecmp.o
+  CC       c-strncasecmp.o
+  CC       careadlinkat.o
+  CC       cloexec.o
+  CC       close-stream.o
+  CC       closeout.o
+  CC       opendir-safer.o
+  CC       dirname.o
+  CC       basename.o
+  CC       dirname-lgpl.o
+  CC       basename-lgpl.o
+  CC       stripslash.o
+  CC       exclude.o
+  CC       exitfail.o
+  CC       chmodat.o
+  CC       chownat.o
+  CC       fd-hook.o
+  CC       fd-safer-flag.o
+  CC       dup-safer-flag.o
+  CC       fdutimensat.o
+  CC       file-has-acl.o
+  CC       filenamecat-lgpl.o
+  CC       fprintftime.o
+  CC       full-write.o
+  CC       getprogname.o
+  CC       gettime.o
+  CC       hard-locale.o
+  CC       hash.o
+  CC       human.o
+  CC       imaxtostr.o
+  CC       inttostr.o
+  CC       offtostr.o
+  CC       uinttostr.o
+  CC       umaxtostr.o
+  CC       localcharset.o
+  CC       malloca.o
+  CC       mbchar.o
+  CC       mbscasecmp.o
+  CC       mbuiter.o
+  CC       modechange.o
+  CC       nstrftime.o
+  CC       openat-die.o
+  CC       parse-datetime.o
+  CC       priv-set.o
+  CC       progname.o
+  CC       quotearg.o
+  CC       renameat2.o
+  CC       safe-read.o
+  CC       safe-write.o
+  CC       save-cwd.o
+  CC       savedir.o
+  CC       se-context.o
+  CC       se-selinux.o
+  CC       stat-time.o
+  CC       statat.o
+  CC       strnlen1.o
+  CC       tempname.o
+  CC       timespec.o
+  CC       timespec-sub.o
+  CC       unistd.o
+  CC       dup-safer.o
+  CC       fd-safer.o
+  CC       pipe-safer.o
+  CC       uniwidth/width.o
+  CC       unlinkdir.o
+  CC       utimens.o
+  CC       version-etc.o
+  CC       version-etc-fsf.o
+  CC       wctype-h.o
+  CC       xmalloc.o
+  CC       xalloc-die.o
+  CC       xgetcwd.o
+  CC       xsize.o
+  CC       xstrndup.o
+  CC       xstrtol.o
+  CC       xstrtoul.o
+  CC       xstrtol-error.o
+  CC       xstrtoumax.o
+  CC       xvasprintf.o
+  CC       xasprintf.o
+  CC       asnprintf.o
+  CC       at-func2.o
+  CC       canonicalize-lgpl.o
+  CC       chdir-long.o
+  CC       euidaccess.o
+  CC       faccessat.o
+  CC       fchmodat.o
+  CC       fchownat.o
+  CC       fcntl.o
+  CC       fdopendir.o
+  CC       fnmatch.o
+  CC       fstatat.o
+  CC       futimens.o
+  CC       getcwd.o
+  CC       getcwd-lgpl.o
+  CC       getdelim.o
+  CC       getline.o
+  CC       getopt.o
+  CC       getopt1.o
+  CC       group-member.o
+  CC       linkat.o
+  CC       localtime-buffer.o
+  CC       mbrtowc.o
+  CC       memchr.o
+  CC       mkdirat.o
+  CC       mkfifoat.o
+  CC       mknodat.o
+  CC       mktime.o
+  CC       obstack.o
+  CC       open.o
+  CC       openat.o
+  CC       openat-proc.o
+  CC       printf-args.o
+  CC       printf-parse.o
+  CC       readlinkat.o
+  CC       regex.o
+  CC       renameat.o
+  CC       rpmatch.o
+  CC       selinux-at.o
+  CC       strerror.o
+  CC       strerror-override.o
+  CC       symlinkat.o
+  CC       time_rz.o
+  CC       timegm.o
+  CC       unlinkat.o
+  CC       utimensat.o
+  CC       vasnprintf.o
+  AR       libgnu.a
+  GEN      charset.alias
+  GEN      ref-add.sed
+  GEN      ref-del.sed
+make[6]: Leaving directory `/ports/tar-1.30/gnu'
+make[5]: Leaving directory `/ports/tar-1.30/gnu'
+make[4]: Leaving directory `/ports/tar-1.30/gnu'
+Making all in lib
+make[4]: Entering directory `/ports/tar-1.30/lib'
+  GEN      rmt-command.h
+make  all-am
+make[5]: Entering directory `/ports/tar-1.30/lib'
+  CC       paxerror.o
+  CC       paxexit-status.o
+  CC       paxnames.o
+  CC       rtapelib.o
+  CC       stdopen.o
+  CC       wordsplit.o
+  CC       xattr-at.o
+  AR       libtar.a
+make[5]: Leaving directory `/ports/tar-1.30/lib'
+make[4]: Leaving directory `/ports/tar-1.30/lib'
+Making all in rmt
+make[4]: Entering directory `/ports/tar-1.30/rmt'
+  CC       rmt.o
+  CCLD     rmt
+make[4]: Leaving directory `/ports/tar-1.30/rmt'
+Making all in src
+make[4]: Entering directory `/ports/tar-1.30/src'
+  CC       buffer.o
+  CC       checkpoint.o
+  CC       compare.o
+  CC       create.o
+  CC       delete.o
+  CC       exit.o
+  CC       exclist.o
+  CC       extract.o
+  CC       xheader.o
+  CC       incremen.o
+  CC       list.o
+  CC       map.o
+  CC       misc.o
+  CC       names.o
+  CC       sparse.o
+  CC       suffix.o
+  CC       system.o
+  CC       tar.o
+  CC       transform.o
+  CC       unlink.o
+  CC       update.o
+  CC       utf8.o
+  CC       warning.o
+  CC       xattrs.o
+  CCLD     tar
+make[4]: Leaving directory `/ports/tar-1.30/src'
+make[3]: Leaving directory `/ports/tar-1.30'
+make[2]: Leaving directory `/ports/tar-1.30'
+sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+parse-datetime.y: In function 'apply_relative_time':
+parse-datetime.y:307: warning: comparison is always false due to limited range of data type
+parse-datetime.y:307: warning: comparison is always false due to limited range of data type
+parse-datetime.y:314: warning: comparison is always false due to limited range of data type
+parse-datetime.y:314: warning: comparison is always false due to limited range of data type
+parse-datetime.y: In function 'time_zone_hhmm':
+parse-datetime.y:1219: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1219: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1219: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1219: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1219: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1219: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1219: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1219: warning: comparison is always false due to limited range of data type
+parse-datetime.y: In function 'to_tm_year':
+parse-datetime.y:1283: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1283: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1283: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1283: warning: comparison is always false due to limited range of data type
+parse-datetime.y: In function 'yylex':
+parse-datetime.y:1440: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1440: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1440: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1440: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1440: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1440: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1440: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1440: warning: comparison is always false due to limited range of data type
+parse-datetime.y: In function 'parse_datetime2':
+parse-datetime.y:1825: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1825: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1825: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1825: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1825: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1825: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1825: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1825: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1872: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1872: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1993: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1993: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1993: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1993: warning: comparison is always true due to limited range of data type
+parse-datetime.y:1994: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1994: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1994: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1994: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1994: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1994: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1994: warning: comparison is always false due to limited range of data type
+parse-datetime.y:1994: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2097: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2097: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2097: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2097: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2097: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2097: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2097: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2097: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2294: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2294: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2294: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2294: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2294: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2294: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2294: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2294: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2296: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2296: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2296: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2296: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2296: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2296: warning: comparison is always true due to limited range of data type
+parse-datetime.y:2296: warning: comparison is always false due to limited range of data type
+parse-datetime.y:2296: warning: comparison is always false due to limited range of data type
+parse-datetime.y: At top level:
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+getdelim.c: In function 'rpl_getdelim':
+getdelim.c:69: warning: 'result' may be used uninitialized in this function
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+linkat.c: In function 'link_follow':
+linkat.c:106: warning: 'target' may be used uninitialized in this function
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+mktime.c: In function 'mktime_internal':
+mktime.c:375: warning: comparison is always false due to limited range of data type
+mktime.c:375: warning: comparison is always false due to limited range of data type
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+In file included from regex.c:72:
+regexec.c: In function 're_search_2_stub':
+regexec.c:360: warning: comparison is always false due to limited range of data type
+regexec.c:360: warning: comparison is always false due to limited range of data type
+regex.c: At top level:
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+regexec.c: In function 're_search_2_stub':
+regexec.c:357: warning: 'len' may be used uninitialized in this function
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' used but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' used but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+xheader.c: In function 'sparse_map_decoder':
+xheader.c:1477: warning: 'e.offset' may be used uninitialized in this function
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' used but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' used but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' used but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' used but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' used but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:30: warning: 'gnu_dev_major' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:33: warning: 'gnu_dev_minor' declared 'static' but never defined
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/sysmacros.h:37: warning: 'gnu_dev_makedev' declared 'static' but never defined
+../gnu/libgnu.a(close-stream.o): In function `close_stream':
+/ports/tar-1.30/gnu/close-stream.c:58: warning: 
+tar.elf2flt: In function `start_header':
+/ports/tar-1.30/src/create.c:864: undefined reference to `gnu_dev_major'
+/ports/tar-1.30/src/create.c:865: undefined reference to `gnu_dev_minor'
+tar.elf2flt: In function `dump_file':
+/ports/tar-1.30/src/create.c:1952: undefined reference to `gnu_dev_major'
+/ports/tar-1.30/src/create.c:1954: undefined reference to `gnu_dev_minor'
+tar.elf2flt: In function `decode_header':
+/ports/tar-1.30/src/list.c:683: undefined reference to `gnu_dev_makedev'
+tar.elf2flt: In function `simple_print_header':
+/ports/tar-1.30/src/list.c:1237: undefined reference to `gnu_dev_major'
+/ports/tar-1.30/src/list.c:1240: undefined reference to `gnu_dev_minor'
+tar.elf2flt: In function `sys_exec_command':
+/ports/tar-1.30/src/system.c:705: undefined reference to `gnu_dev_minor'
+/ports/tar-1.30/src/system.c:706: undefined reference to `gnu_dev_major'
+collect2: ld returned 1 exit status
+make[4]: *** [tar] Error 1
+make[3]: *** [all-recursive] Error 1
+make[2]: *** [all] Error 2

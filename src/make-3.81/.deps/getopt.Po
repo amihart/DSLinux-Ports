@@ -1,0 +1,48 @@
+getopt.o getopt.o: getopt.c config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/stdio.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/features.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_stdio.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/wchar.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/wchar.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stdarg.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/bits/stdio_lim.h \
+  /home/home/diskb/mnt/dslinux/uClibc/include/gnu-versions.h
+
+config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/stdio.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/features.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_config.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/sys/cdefs.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/kernel_types.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/pthreadtypes.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/sched.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/uClibc_stdio.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/wchar.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/wchar.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stdarg.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/bits/stdio_lim.h:
+
+/home/home/diskb/mnt/dslinux/uClibc/include/gnu-versions.h:

@@ -1,0 +1,39 @@
+gen.o: gen.c z80.h ../common.h ../SDCCglobl.h ../SDCCset.h \
+  ../../sdccconf.h ../../support/Util/SDCCerr.h ../SDCCmem.h ../SDCCast.h \
+  ../SDCCsymt.h ../SDCChasht.h ../SDCCval.h ../SDCCy.h ../SDCCbitv.h \
+  ../SDCCicode.h ../SDCClabel.h ../SDCCBBlock.h ../SDCCloop.h \
+  ../SDCCcse.h ../SDCCcflow.h ../SDCCdflow.h ../SDCClrange.h \
+  ../SDCCptropt.h ../SDCCopt.h ../SDCCglue.h ../SDCCpeeph.h \
+  ../SDCCdebug.h ../SDCCutil.h ../asm.h ../port.h ../SDCCargs.h \
+  ../../support/Util/newalloc.h ralloc.h ../SDCCicode.h ../SDCCBBlock.h \
+  support.h ../SDCCglobl.h ../SDCCpeeph.h gen.h ../SDCCglue.h \
+  ../../support/Util/newalloc.h
+main.o: main.c z80.h ../common.h ../SDCCglobl.h ../SDCCset.h \
+  ../../sdccconf.h ../../support/Util/SDCCerr.h ../SDCCmem.h ../SDCCast.h \
+  ../SDCCsymt.h ../SDCChasht.h ../SDCCval.h ../SDCCy.h ../SDCCbitv.h \
+  ../SDCCicode.h ../SDCClabel.h ../SDCCBBlock.h ../SDCCloop.h \
+  ../SDCCcse.h ../SDCCcflow.h ../SDCCdflow.h ../SDCClrange.h \
+  ../SDCCptropt.h ../SDCCopt.h ../SDCCglue.h ../SDCCpeeph.h \
+  ../SDCCdebug.h ../SDCCutil.h ../asm.h ../port.h ../SDCCargs.h \
+  ../../support/Util/newalloc.h ralloc.h ../SDCCicode.h ../SDCCBBlock.h \
+  support.h ../../support/Util/MySystem.h ../SDCCset.h \
+  ../../support/Util/BuildCmd.h ../SDCCutil.h ../../support/Util/dbuf.h \
+  peeph.rul peeph-z80.rul peeph-gbz80.rul mappings.i
+ralloc.o: ralloc.c z80.h ../common.h ../SDCCglobl.h ../SDCCset.h \
+  ../../sdccconf.h ../../support/Util/SDCCerr.h ../SDCCmem.h ../SDCCast.h \
+  ../SDCCsymt.h ../SDCChasht.h ../SDCCval.h ../SDCCy.h ../SDCCbitv.h \
+  ../SDCCicode.h ../SDCClabel.h ../SDCCBBlock.h ../SDCCloop.h \
+  ../SDCCcse.h ../SDCCcflow.h ../SDCCdflow.h ../SDCClrange.h \
+  ../SDCCptropt.h ../SDCCopt.h ../SDCCglue.h ../SDCCpeeph.h \
+  ../SDCCdebug.h ../SDCCutil.h ../asm.h ../port.h ../SDCCargs.h \
+  ../../support/Util/newalloc.h ralloc.h ../SDCCicode.h ../SDCCBBlock.h \
+  support.h
+support.o: support.c z80.h ../common.h ../SDCCglobl.h ../SDCCset.h \
+  ../../sdccconf.h ../../support/Util/SDCCerr.h ../SDCCmem.h ../SDCCast.h \
+  ../SDCCsymt.h ../SDCChasht.h ../SDCCval.h ../SDCCy.h ../SDCCbitv.h \
+  ../SDCCicode.h ../SDCClabel.h ../SDCCBBlock.h ../SDCCloop.h \
+  ../SDCCcse.h ../SDCCcflow.h ../SDCCdflow.h ../SDCClrange.h \
+  ../SDCCptropt.h ../SDCCopt.h ../SDCCglue.h ../SDCCpeeph.h \
+  ../SDCCdebug.h ../SDCCutil.h ../asm.h ../port.h ../SDCCargs.h \
+  ../../support/Util/newalloc.h ralloc.h ../SDCCicode.h ../SDCCBBlock.h \
+  support.h

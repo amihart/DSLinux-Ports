@@ -1,0 +1,15 @@
+stripslash.o stripslash.o: stripslash.c ../config.h dirname.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stdbool.h stddef.h \
+  /home/home/diskb/mnt/dslinux/include/gcc/stddef.h dosname.h
+
+../config.h:
+
+dirname.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stdbool.h:
+
+stddef.h:
+
+/home/home/diskb/mnt/dslinux/include/gcc/stddef.h:
+
+dosname.h:

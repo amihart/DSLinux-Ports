@@ -1,0 +1,2 @@
+cd code/
+find . -iname "*.gdb.gdb"
