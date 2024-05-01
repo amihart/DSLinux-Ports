@@ -22,7 +22,7 @@ The `kernel.nds` is a kernel built with support for mounting drives over the net
 
 ## nano
 
-The version of `nano` that comes with DSLinux is `1.2.5`. The version here is much more up to date at `6.0.0`. The package also includes syntax highlighting profiles for Lua and shell scripts. 
+The version of `nano` that comes with DSLinux is `1.2.5`. The version here is much more up to date at `6.0.0`. The package also includes syntax highlighting profiles for Lua, SH, C, Perl, and assembly. 
 
 ![image](https://github.com/amihart/DSLinux-Ports/assets/6305912/eef2cd73-a2cb-4bd8-9877-1ef7505b4048)
 
@@ -46,23 +46,24 @@ The `binutils-2.13` package has a working version of the GNU assembler. This is 
 .section .text
 _start:
   mov r0, #STDOUT_FILENO
-  ldr r1, [sl, #0]
+  ldr r1, [sl, #str]
   mov r2, #strlen
   swi __NR_write
   mov r0, #0
   swi __NR_exit
 .section .data
-_str:
+_str: .equ str, 0
   .ascii "Hello, World!\n"
   .equ strlen, . - _str
 ```
 
-System calls are made using the `swi` instruction and their addresses are included in the `unistd.s` file. One thing that is a bit different here is the `ldr r1, \[sl, #0\]` line. Because the NDS lacks an MMU, it can't use virtual memory addreses. When you a label like `_str`, at compile time this compiles down to some memory address. Usually, at runtime, this memory address is treated as "virtual" because the MMU will remap it to some physical memory address based on the operating system's needs. Since the NDS can't do this, we can't actually directly reference any memory addreses like `_str` since their addresses will differ between at compile time and at run time.
+System calls are made using the `swi` instruction and their addresses are included in the `unistd.s` file. One thing that is a bit different here is the `ldr r1, [sl, #0]` line. Because the NDS lacks an MMU, it can't use virtual memory addreses. When you a label like `_str`, at compile time this compiles down to some memory address. Usually, at runtime, this memory address is treated as "virtual" because the MMU will remap it to some physical memory address based on the operating system's needs. Since the NDS can't do this, we can't actually directly reference any memory addreses like `_str` since their addresses will differ between at compile time and at run time.
 
 There are two solutions to this. The first is to just never use absolute memory addresses. You can make everything relative, such as, by pushing data to the stack, then referencing the data at the stack pointer. However, the operating system actually does provide a way to use the `.data` segment, and that's with something called a _global offset table for position independent code_, or _gotpic_ for short. If your program uses a global offset table, then at runtime, the operating system will provide a table which you can access in your code that lists where all your data was actually loaded into memory. It then stores this offset table at a memory address pointed to by the `sl` register, which is just `r10`.
 
-My `o2bflt` will setup the offset table for you. It sets it up so that the order your labels appear in the `.data` segment is equivalent to their index into the global offset table. In this case, `_str` is our very first label, so its index into the table is `0`. If we added another label, the index to that would be `1`. This is why we have the `ldr r1, \[sl, #0\]` instruction. It is saying to look for a pointer located at `sl` with an offset of `0`, and then usethat pointer to look up a memory address, and store that into `r1`. In this case, `r1` will get wherever the value `_str` was loaded into at runtime. If we had another label, we could load the second label's runtime memory address into `r1` using `ldr r1, \[sl, #4\]`. The reason it is `#4` and not `#1` is because memory addresses are 32-bits long, and the offset table is simply a list of memory addresses, and grab the pointer at index `X` requires using an offset of `4X`.
+My `o2bflt` will setup the offset table for you. It sets it up so that the order your labels appear in the `.data` segment is equivalent to their index into the global offset table (if you add a `.rodata` or `.bss`, the will just be concatenated onto the end of `.data.` in that order). In this case, `_str` is our very first label, so its index into the table is `0`, and I also go ahead and define constant for its index using `.equ str, 0`.  If we added another label, the index to that would be `4` because memory addresses are 32-bits, so each entry into the offset table is 4 bytes.
 
+This is why we have the `ldr r1, [sl, #str]` instruction. It is saying to look for a pointer located at `sl` with an offset of `#str`, and then use that pointer to look up a memory address, and store that into `r1`. In this case, `r1` will get wherever the value `_str` was loaded into at runtime. If we had another label, we could load the second label's runtime memory address into `r1` by defining a constant such as `.equ str2, 4` and referencing it using `ldr r1, [sl, #str2]`. Note that it does not matter how long a single labeled chunk of data is in the `.data` segment. All that matters is the ordering of the labels. If you create a string called `_str` then one called `_str2` and the former is 8 bytes long and the latter 100, they could still only be index `0` and `4` respectively.
 
 ## ftp
 
