@@ -65,6 +65,8 @@ My `o2bflt` will setup the offset table for you. It sets it up so that the order
 
 This is why we have the `ldr r1, [sl, #str]` instruction. It is saying to look for a pointer located at `sl` with an offset of `#str`, and then use that pointer to look up a memory address, and store that into `r1`. In this case, `r1` will get wherever the value `_str` was loaded into at runtime. If we had another label, we could load the second label's runtime memory address into `r1` by defining a constant such as `.equ str2, 4` and referencing it using `ldr r1, [sl, #str2]`. Note that it does not matter how long a single labeled chunk of data is in the `.data` segment. All that matters is the ordering of the labels. If you create a string called `_str` then one called `_str2` and the former is 8 bytes long and the latter 100, they could still only be index `0` and `4` respectively.
 
+Please report any bugs in `o2bflt` to this repository.
+
 ## ftp
 
 An alternative to `ncftp` that ships with DSLinux.
