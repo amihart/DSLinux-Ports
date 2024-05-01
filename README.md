@@ -6,11 +6,11 @@ Install packages from the www/ folder by running...
 tar -xvf package.tar -C / 
 ```
 
-You can run coreutils-init.sh to copy files from coreutils to the /usr/bin/ folder, which enables some useful commands like `wc`. `base64`, and `bc`. However, the developers probably did not do this because some are buggy, such as `printf` which just seems to crash. Inside of the www/ folder you may find some redundant packages that are also in coreutils. Try one of these redundant ports if one of the coreutils ones are buggy.
+You can run coreutils-init.sh to copy files from coreutils to the /usr/bin/ folder, which enables some useful commands like `wc`. `base64`, and `bc`. Inside of the www/ folder you may find some redundant packages that are also in coreutils. Try one of these redundant ports if you want a later version.
 
 ## Lua
 
-The `lua.tar` package contains both the Lua5 interpreter and compiler compiled with POSIX support. DSLinux by default has no methodology, outside of shell scripts, to write software on the console itself. This allows for writing Lua code and compiling it and running it on the NDS itself, and it runs quite fast.
+The `lua.tar` package contains both the Lua5 interpreter and compiler compiled with POSIX support. 
 
 ## Dropbear
 
@@ -52,18 +52,23 @@ _start:
   mov r0, #0
   swi __NR_exit
 .section .data
-_str: .equ str, 0
+data str
   .ascii "Hello, World!\n"
   .equ strlen, . - _str
 ```
 
-System calls are made using the `swi` instruction and their addresses are included in the `unistd.s` file. One thing that is a bit different here is the `ldr r1, [sl, #str]` line. Because the NDS lacks an MMU, it can't use virtual memory addreses. When you a label like `_str`, at compile time this compiles down to some memory address. Usually, at runtime, this memory address is treated as "virtual" because the MMU will remap it to some physical memory address based on the operating system's needs. Since the NDS can't do this, we can't actually directly reference any memory addreses like `_str` since their addresses will differ between at compile time and at run time.
+```sh
+$ as hello.s -o hello.o
+$ o2bflt hello.o
+$ ./hello
+Hello, World!
+```
+
+System calls are made using the `swi` instruction and their addresses are included in the `unistd.s` file. One thing that is a bit different here is the `ldr r1, [sl, #str]` line. Because the NDS lacks an MMU, it can't use virtual memory addresses. When you use a label like `_str`, at compile time this compiles down to some memory address. Usually, at runtime, this memory address is treated as "virtual" because the MMU will remap it to some physical memory address based on the operating system's needs at runtime. Since the NDS can't do this, we can't actually directly reference any memory addreses like `_str` since their addresses will differ between at compile time and at run time.
 
 There are two solutions to this. The first is to just never use absolute memory addresses. You can make everything relative, such as, by pushing data to the stack, then referencing the data at the stack pointer. However, the operating system actually does provide a way to use the `.data` segment, and that's with something called a _global offset table for position independent code_, or _gotpic_ for short. If your program uses a global offset table, then at runtime, the operating system will provide a table which you can access in your code that lists where all your data was actually loaded into memory. It then stores this offset table at a memory address pointed to by the `sl` register, which is just `r10`.
 
-My `o2bflt` will setup the offset table for you. It sets it up so that the order your labels appear in the `.data` segment is equivalent to their index into the global offset table (if you add a `.rodata` or `.bss`, the will just be concatenated onto the end of `.data.` in that order). In this case, `_str` is our very first label, so its index into the table is `0`, and I also go ahead and define constant for its index using `.equ str, 0`.  If we added another label, the index to that would be `4` because memory addresses are 32-bits, so each entry into the offset table is 4 bytes.
-
-This is why we have the `ldr r1, [sl, #str]` instruction. It is saying to look for a pointer located at `sl` with an offset of `#str`, and then use that pointer to look up a memory address, and store that into `r1`. In this case, `r1` will get wherever the value `_str` was loaded into at runtime. If we had another label, we could load the second label's runtime memory address into `r1` by defining a constant such as `.equ str2, 4` and referencing it using `ldr r1, [sl, #str2]`. Note that it does not matter how long a single labeled chunk of data is in the `.data` segment. All that matters is the ordering of the labels. If you create a string called `_str` then one called `_str2` and the former is 8 bytes long and the latter 100, they could still only be index `0` and `4` respectively.
+My `o2bflt` will setup the offset table for you as well as a `data` macro which both creates the label for you as well as a constant with its index into the global offset table. That's what the line `data str` is doing, it is using the macro which creates a label `_str` as well as a constant `str` where `str` is the index in the global offset table for `_str`. At runtime, you cannot call `_str` directly because you do not know where it might be loaded into memory, but you know the global offset table is stored in `sl` and the index wll be `str`, so you can use that to call `ldr r1, [sl, #str]` which goes to the global offset table at `sl` with an offset of `str` and loads the pointer from there into `r1`. 
 
 Please report any bugs in `o2bflt` to this repository.
 
