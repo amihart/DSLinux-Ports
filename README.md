@@ -10,7 +10,7 @@ You can run coreutils-init.sh to copy files from coreutils to the /usr/bin/ fold
 
 ## Lua
 
-The `lua.tar` package contains both the Lua5 interpreter and compiler compiled with POSIX support. DSLinux by default has no methodology, outside of shell scripts, to write software on the console itself. This allows for writing Lua code and compiling it and running it on the NDS itself, and it runs quite fast.
+The `lua.tar` package contains both the Lua5 interpreter and compiler compiled with POSIX support. 
 
 ## Dropbear
 
