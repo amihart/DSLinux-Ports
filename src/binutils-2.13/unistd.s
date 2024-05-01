@@ -1,3 +1,9 @@
+.equ __GOT_OFFSET__, 0
+.macro data val
+	.equ \val, __GOT_OFFSET__
+	.equ __GOT_OFFSET__, __GOT_OFSET__ + 4
+_\val:
+.endm
 .equ STDIN_FILENO, 0x0
 .equ STDOUT_FILENO, 0x1
 .equ STDERR_FILENO, 0x2
