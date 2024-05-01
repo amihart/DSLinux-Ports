@@ -1,4 +1,4 @@
-1. Compile by running `make`.
+1. Compile by running `./make.sh`.
 2. You must be in the `make xsh` environment.
 3. You must run `make` on in the uClibc folder
    after entering the `make xsh` environment.
