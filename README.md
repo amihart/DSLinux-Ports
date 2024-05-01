@@ -57,6 +57,13 @@ _str: .equ str, 0
   .equ strlen, . - _str
 ```
 
+```sh
+$ as hello.s -o hello.o
+$ o2bflt hello.o
+$ ./hello
+Hello, World!
+```
+
 System calls are made using the `swi` instruction and their addresses are included in the `unistd.s` file. One thing that is a bit different here is the `ldr r1, [sl, #str]` line. Because the NDS lacks an MMU, it can't use virtual memory addreses. When you a label like `_str`, at compile time this compiles down to some memory address. Usually, at runtime, this memory address is treated as "virtual" because the MMU will remap it to some physical memory address based on the operating system's needs. Since the NDS can't do this, we can't actually directly reference any memory addreses like `_str` since their addresses will differ between at compile time and at run time.
 
 There are two solutions to this. The first is to just never use absolute memory addresses. You can make everything relative, such as, by pushing data to the stack, then referencing the data at the stack pointer. However, the operating system actually does provide a way to use the `.data` segment, and that's with something called a _global offset table for position independent code_, or _gotpic_ for short. If your program uses a global offset table, then at runtime, the operating system will provide a table which you can access in your code that lists where all your data was actually loaded into memory. It then stores this offset table at a memory address pointed to by the `sl` register, which is just `r10`.
