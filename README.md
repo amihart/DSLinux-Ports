@@ -84,10 +84,6 @@ Another useful command ported here is `awk` found in the `awk.tar` package, whic
 
 The version of `wget` here in the `wget.tar` package is a later version but without SSL support (meaning HTTPS websites don't work). The `wget` in DSLinux by default has SSL support but it is outdated and so it fails to form an SSL connection on many websites. The SSL code for the later version of `wget` seems to build but crash when actually used, so it is built without SSL support. You can choose either to stick with the older version of `wget` with finnicky SSL support, or the newer one without it, depending on your preference.
 
-## zedex
-
-The `zedex` interpreter is a custom interpreter I've written that allows you run programs on Linux systems compiled with the Small Device C Compiler. This is slower than writing native applications, but might be more convenient if you just want to put something together quickly, as it allows you to run code in DSLinux that has been compiled using a modern compiler (it requires at least SDCC v4.2 to work). You can follow the README at [my other repository](https://github.com/amihart/Zedex/) to learn how to compile code that can be ran with `zedex`. Inside of the `conf/` folder in that repository is a `unistd.h.arm` file that I generated for DSLinux, so you do not need to generate it yourself, but you can if you wish.
-
 ## bugs
 
 Some software seems to have a bug where it won't open files within folders on the home directory... not really sure the cause of it. Sometimes DSLinux also just crashes spitting out a lot of text, which seems to be a file system error because sometimes it will lead to a file system panic when you reboot. Not sure what causes this either.
